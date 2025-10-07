@@ -9,8 +9,11 @@ const TerminalPortfolio = () => {
   const [lang, setLang] = useState('fr');
   const [isBooting, setIsBooting] = useState(true);
   const [showMatrix, setShowMatrix] = useState(false);
+  const [isTyping, setIsTyping] = useState(false);
+  const [typingLineIndex, setTypingLineIndex] = useState(-1);
   const inputRef = useRef(null);
   const outputRef = useRef(null);
+  const typingIntervalRef = useRef(null);
 
   // Composant pour le logo avec couleurs
   const AsciiLogo = () => (
@@ -333,9 +336,51 @@ Let's build something amazing together!`,
     if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON' || e.target.closest('button')) {
       return;
     }
-    if (inputRef.current) {
+    if (inputRef.current && !isTyping) {
       inputRef.current.focus();
     }
+  };
+
+  // Fonction pour afficher du texte lettre par lettre
+  const typeText = (text, type = 'output') => {
+    setIsTyping(true);
+    let currentIndex = 0;
+    const outputIndex = output.length;
+    setTypingLineIndex(outputIndex);
+    
+    // Ajouter une ligne vide qui sera remplie progressivement
+    setOutput(prev => [...prev, { type, text: '' }]);
+    
+    const typeInterval = setInterval(() => {
+      if (currentIndex < text.length) {
+        setOutput(prev => {
+          const newOutput = [...prev];
+          newOutput[outputIndex] = { 
+            type, 
+            text: text.substring(0, currentIndex + 1)
+          };
+          return newOutput;
+        });
+        currentIndex++;
+        
+        // Scroll pendant la frappe
+        if (outputRef.current) {
+          outputRef.current.scrollTop = outputRef.current.scrollHeight;
+        }
+      } else {
+        clearInterval(typeInterval);
+        setIsTyping(false);
+        setTypingLineIndex(-1);
+        // Texte final
+        setOutput(prev => {
+          const newOutput = [...prev];
+          newOutput[outputIndex] = { type, text };
+          return newOutput;
+        });
+      }
+    }, 10); // 10ms entre chaque caractère pour un effet rapide mais visible
+    
+    typingIntervalRef.current = typeInterval;
   };
 
   const executeCommand = (cmd) => {
@@ -360,37 +405,37 @@ Let's build something amazing together!`,
     }
 
     if (trimmedCmd === 'help') {
-      setOutput(prev => [...prev, { type: 'output', text: t.help }]);
+      typeText(t.help);
       return;
     }
 
     if (trimmedCmd === 'about') {
-      setOutput(prev => [...prev, { type: 'output', text: t.about }]);
+      typeText(t.about);
       return;
     }
 
     if (trimmedCmd === 'skills') {
-      setOutput(prev => [...prev, { type: 'output', text: t.skills }]);
+      typeText(t.skills);
       return;
     }
 
     if (trimmedCmd === 'experience') {
-      setOutput(prev => [...prev, { type: 'output', text: t.experience }]);
+      typeText(t.experience);
       return;
     }
 
     if (trimmedCmd === 'projects') {
-      setOutput(prev => [...prev, { type: 'output', text: t.projects }]);
+      typeText(t.projects);
       return;
     }
 
     if (trimmedCmd === 'contact') {
-      setOutput(prev => [...prev, { type: 'output', text: t.contact }]);
+      typeText(t.contact);
       return;
     }
 
     if (trimmedCmd === 'hire') {
-      setOutput(prev => [...prev, { type: 'output', text: t.hire }]);
+      typeText(t.hire);
       return;
     }
 
@@ -435,6 +480,12 @@ Let's build something amazing together!`,
   };
 
   const handleKeyDown = (e) => {
+    // Bloquer les inputs pendant la frappe
+    if (isTyping && e.key === 'Enter') {
+      e.preventDefault();
+      return;
+    }
+    
     if (e.key === 'Enter') {
       executeCommand(input);
       setInput('');
@@ -538,7 +589,10 @@ Let's build something amazing together!`,
               line.type === 'system' ? 'text-yellow-400' : 
               'text-green-300'
             }`}>
-              <pre className="whitespace-pre-wrap break-words">{line.text}</pre>
+              <pre className="whitespace-pre-wrap break-words">
+                {line.text}
+                {i === typingLineIndex && <span className="animate-pulse">▊</span>}
+              </pre>
             </div>
           )
         ))}
@@ -548,16 +602,21 @@ Let's build something amazing together!`,
       {!isBooting && (
         <div className="flex items-center gap-2 flex-shrink-0 pt-2 border-t border-green-800/30">
           <span className="text-cyan-400">raphael@terminal:~$</span>
-          <input
-            ref={inputRef}
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            className="flex-1 bg-transparent border-none outline-none text-green-400"
-            autoFocus
-          />
-          <span className="animate-pulse">▊</span>
+          <div className="flex-1 relative">
+            <input
+              ref={inputRef}
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              className="w-full bg-transparent border-none outline-none text-green-400 caret-transparent"
+              disabled={isTyping}
+              autoFocus
+            />
+            <span className="absolute left-0 top-0 pointer-events-none text-green-400">
+              {input}<span className="animate-pulse">▊</span>
+            </span>
+          </div>
         </div>
       )}
 
