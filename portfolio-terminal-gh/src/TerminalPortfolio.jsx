@@ -190,7 +190,7 @@ Databases:
 ║            CONTACT                           ║
 ╚══════════════════════════════════════════════╝
 
-📧 Email:    ralphi2811@gmail.com
+📧 Email:    contact@raphaeldev.fr
 📱 Tél:      +262 693 39 58 98
 🔗 LinkedIn: linkedin.com/in/raphaelauberlet
 📍 Location: Le Tampon, La Réunion (974)
@@ -214,7 +214,7 @@ Vous cherchez un dev qui comprend VRAIMENT le métier ?
 🎯 Autonome, créatif, et toujours à jour
 🌍 Remote-friendly, disponible immédiatement
 
-📩 ralphi2811@gmail.com
+📩 contact@raphaeldev.fr
 Let's build something amazing together!`,
       notFound: "Commande non reconnue. Tapez 'help' pour la liste des commandes."
     },
@@ -306,7 +306,7 @@ Databases:
 ║            CONTACT                           ║
 ╚══════════════════════════════════════════════╝
 
-📧 Email:    ralphi2811@gmail.com
+📧 Email:    contact@raphaeldev.fr
 📱 Phone:    +262 693 39 58 98
 🔗 LinkedIn: linkedin.com/in/raphaelauberlet
 📍 Location: Le Tampon, Reunion Island (974)
@@ -330,7 +330,7 @@ Looking for a dev who REALLY understands the business?
 🎯 Autonomous, creative, always up-to-date
 🌍 Remote-friendly, available immediately
 
-📩 ralphi2811@gmail.com
+📩 contact@raphaeldev.fr
 Let's build something amazing together!`,
       notFound: "Command not recognized. Type 'help' for command list."
     }
