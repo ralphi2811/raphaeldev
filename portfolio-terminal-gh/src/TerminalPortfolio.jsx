@@ -15,25 +15,89 @@ const TerminalPortfolio = () => {
   const outputRef = useRef(null);
   const typingIntervalRef = useRef(null);
 
-  // Composant pour le logo avec couleurs
-  const AsciiLogo = () => (
-    <div className="my-2 w-full">
-      <div className="leading-tight whitespace-pre font-mono text-sm">
-        <div><span className="text-cyan-400">╔═════════════════════════════════════════════════════════════════════════════════════╗</span></div>
-        <div><span className="text-cyan-400">║</span>                                                                                     <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>  <span className="text-green-400">██████╗ </span> <span className="text-green-300">█████╗ </span><span className="text-cyan-400">██████╗ </span><span className="text-cyan-300">██╗  ██╗</span> <span className="text-blue-400">█████╗ </span><span className="text-blue-300">███████╗</span><span className="text-purple-400">██╗     </span><span className="text-pink-400">██████╗ </span><span className="text-red-400">███████╗</span><span className="text-orange-400">██╗   ██╗</span>  <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>  <span className="text-green-400">██╔══██╗</span><span className="text-green-300">██╔══██╗</span><span className="text-cyan-400">██╔══██╗</span><span className="text-cyan-300">██║  ██║</span><span className="text-blue-400">██╔══██╗</span><span className="text-blue-300">██╔════╝</span><span className="text-purple-400">██║     </span><span className="text-pink-400">██╔══██╗</span><span className="text-red-400">██╔════╝</span><span className="text-orange-400">██║   ██║</span>  <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>  <span className="text-green-400">██████╔╝</span><span className="text-green-300">███████║</span><span className="text-cyan-400">██████╔╝</span><span className="text-cyan-300">███████║</span><span className="text-blue-400">███████║</span><span className="text-blue-300">█████╗  </span><span className="text-purple-400">██║     </span><span className="text-pink-400">██║  ██║</span><span className="text-red-400">█████╗  </span><span className="text-orange-400">██║   ██║</span>  <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>  <span className="text-green-400">██╔══██╗</span><span className="text-green-300">██╔══██║</span><span className="text-cyan-400">██╔═══╝ </span><span className="text-cyan-300">██╔══██║</span><span className="text-blue-400">██╔══██║</span><span className="text-blue-300">██╔══╝  </span><span className="text-purple-400">██║     </span><span className="text-pink-400">██║  ██║</span><span className="text-red-400">██╔══╝  </span><span className="text-orange-400">╚██╗ ██╔╝</span>  <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>  <span className="text-green-400">██║  ██║</span><span className="text-green-300">██║  ██║</span><span className="text-cyan-400">██║     </span><span className="text-cyan-300">██║  ██║</span><span className="text-blue-400">██║  ██║</span><span className="text-blue-300">███████╗</span><span className="text-purple-400">███████╗</span><span className="text-pink-400">██████╔╝</span><span className="text-red-400">███████╗</span><span className="text-orange-400"> ╚████╔╝ </span>  <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>  <span className="text-gray-500">╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═════╝ ╚══════╝  ╚═══╝  </span>  <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>                                                                                     <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>                                     <span className="text-yellow-400 font-bold">raphaeldev.fr</span>                                   <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">║</span>                                                                                     <span className="text-cyan-400">║</span></div>
-        <div><span className="text-cyan-400">╚═════════════════════════════════════════════════════════════════════════════════════╝</span></div>
+  // Composant pour le logo avec effet wave
+  const AsciiLogo = () => {
+    const [wavePhase, setWavePhase] = useState(0);
+    
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setWavePhase(prev => (prev + 1) % 20);
+      }, 100);
+      
+      return () => clearInterval(interval);
+    }, []);
+    
+    // Fonction pour obtenir l'intensité de la couleur selon la phase de la vague
+    const getColorIntensity = (letterIndex) => {
+      const distance = Math.abs((wavePhase % 10) - letterIndex);
+      if (distance <= 1) return 'bright';
+      if (distance <= 2) return 'normal';
+      return 'dim';
+    };
+    
+    // Classes de couleur selon l'intensité
+    const getColorClass = (baseColor, letterIndex) => {
+      const intensity = getColorIntensity(letterIndex);
+      const colorMap = {
+        green: {
+          bright: 'text-green-300 drop-shadow-[0_0_8px_rgba(74,222,128,0.8)]',
+          normal: 'text-green-400',
+          dim: 'text-green-500'
+        },
+        cyan: {
+          bright: 'text-cyan-300 drop-shadow-[0_0_8px_rgba(103,232,249,0.8)]',
+          normal: 'text-cyan-400',
+          dim: 'text-cyan-500'
+        },
+        blue: {
+          bright: 'text-blue-300 drop-shadow-[0_0_8px_rgba(147,197,253,0.8)]',
+          normal: 'text-blue-400',
+          dim: 'text-blue-500'
+        },
+        purple: {
+          bright: 'text-purple-300 drop-shadow-[0_0_8px_rgba(216,180,254,0.8)]',
+          normal: 'text-purple-400',
+          dim: 'text-purple-500'
+        },
+        pink: {
+          bright: 'text-pink-300 drop-shadow-[0_0_8px_rgba(249,168,212,0.8)]',
+          normal: 'text-pink-400',
+          dim: 'text-pink-500'
+        },
+        red: {
+          bright: 'text-red-300 drop-shadow-[0_0_8px_rgba(252,165,165,0.8)]',
+          normal: 'text-red-400',
+          dim: 'text-red-500'
+        },
+        orange: {
+          bright: 'text-orange-300 drop-shadow-[0_0_8px_rgba(253,186,116,0.8)]',
+          normal: 'text-orange-400',
+          dim: 'text-orange-500'
+        }
+      };
+      
+      return colorMap[baseColor][intensity];
+    };
+    
+    return (
+      <div className="my-2 w-full">
+        <div className="leading-tight whitespace-pre font-mono text-sm">
+          <div><span className="text-cyan-400">╔═════════════════════════════════════════════════════════════════════════════════════╗</span></div>
+          <div><span className="text-cyan-400">║</span>                                                                                     <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>  <span className={getColorClass('green', 0)}>██████╗ </span> <span className={getColorClass('green', 1)}>█████╗ </span><span className={getColorClass('cyan', 2)}>██████╗ </span><span className={getColorClass('cyan', 3)}>██╗  ██╗</span> <span className={getColorClass('blue', 4)}>█████╗ </span><span className={getColorClass('blue', 5)}>███████╗</span><span className={getColorClass('purple', 6)}>██╗     </span><span className={getColorClass('pink', 7)}>██████╗ </span><span className={getColorClass('red', 8)}>███████╗</span><span className={getColorClass('orange', 9)}>██╗   ██╗</span>  <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>  <span className={getColorClass('green', 0)}>██╔══██╗</span><span className={getColorClass('green', 1)}>██╔══██╗</span><span className={getColorClass('cyan', 2)}>██╔══██╗</span><span className={getColorClass('cyan', 3)}>██║  ██║</span><span className={getColorClass('blue', 4)}>██╔══██╗</span><span className={getColorClass('blue', 5)}>██╔════╝</span><span className={getColorClass('purple', 6)}>██║     </span><span className={getColorClass('pink', 7)}>██╔══██╗</span><span className={getColorClass('red', 8)}>██╔════╝</span><span className={getColorClass('orange', 9)}>██║   ██║</span>  <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>  <span className={getColorClass('green', 0)}>██████╔╝</span><span className={getColorClass('green', 1)}>███████║</span><span className={getColorClass('cyan', 2)}>██████╔╝</span><span className={getColorClass('cyan', 3)}>███████║</span><span className={getColorClass('blue', 4)}>███████║</span><span className={getColorClass('blue', 5)}>█████╗  </span><span className={getColorClass('purple', 6)}>██║     </span><span className={getColorClass('pink', 7)}>██║  ██║</span><span className={getColorClass('red', 8)}>█████╗  </span><span className={getColorClass('orange', 9)}>██║   ██║</span>  <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>  <span className={getColorClass('green', 0)}>██╔══██╗</span><span className={getColorClass('green', 1)}>██╔══██║</span><span className={getColorClass('cyan', 2)}>██╔═══╝ </span><span className={getColorClass('cyan', 3)}>██╔══██║</span><span className={getColorClass('blue', 4)}>██╔══██║</span><span className={getColorClass('blue', 5)}>██╔══╝  </span><span className={getColorClass('purple', 6)}>██║     </span><span className={getColorClass('pink', 7)}>██║  ██║</span><span className={getColorClass('red', 8)}>██╔══╝  </span><span className={getColorClass('orange', 9)}>╚██╗ ██╔╝</span>  <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>  <span className={getColorClass('green', 0)}>██║  ██║</span><span className={getColorClass('green', 1)}>██║  ██║</span><span className={getColorClass('cyan', 2)}>██║     </span><span className={getColorClass('cyan', 3)}>██║  ██║</span><span className={getColorClass('blue', 4)}>██║  ██║</span><span className={getColorClass('blue', 5)}>███████╗</span><span className={getColorClass('purple', 6)}>███████╗</span><span className={getColorClass('pink', 7)}>██████╔╝</span><span className={getColorClass('red', 8)}>███████╗</span><span className={getColorClass('orange', 9)}> ╚████╔╝ </span>  <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>  <span className="text-gray-500">╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═════╝ ╚══════╝  ╚═══╝  </span>  <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>                                                                                     <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>                                     <span className="text-yellow-400 font-bold">raphaeldev.fr</span>                                   <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">║</span>                                                                                     <span className="text-cyan-400">║</span></div>
+          <div><span className="text-cyan-400">╚═════════════════════════════════════════════════════════════════════════════════════╝</span></div>
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   const asciiLogo = 'ASCII_LOGO_COMPONENT';
 
