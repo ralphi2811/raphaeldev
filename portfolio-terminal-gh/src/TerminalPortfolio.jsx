@@ -454,9 +454,50 @@ Let's build something amazing together!`,
     }
 
     if (trimmedCmd === 'matrix') {
-      setShowMatrix(true);
-      setTimeout(() => setShowMatrix(false), 3000);
-      setOutput(prev => [...prev, { type: 'output', text: 'Entering the Matrix...' }]);
+      setIsTyping(true);
+      
+      // Capturer l'état actuel
+      const currentOutput = [...output];
+      
+      // Message de chargement
+      setOutput([...currentOutput, { type: 'output', text: 'Entering the Matrix...' }]);
+      
+      // Barre de progression
+      const loadingChars = ['[          ]', '[▓         ]', '[▓▓        ]', '[▓▓▓       ]', 
+                           '[▓▓▓▓      ]', '[▓▓▓▓▓     ]', '[▓▓▓▓▓▓    ]', '[▓▓▓▓▓▓▓   ]',
+                           '[▓▓▓▓▓▓▓▓  ]', '[▓▓▓▓▓▓▓▓▓ ]', '[▓▓▓▓▓▓▓▓▓▓]'];
+      
+      let loadingIndex = 0;
+      
+      const loadingInterval = setInterval(() => {
+        if (loadingIndex < loadingChars.length) {
+          setOutput([
+            ...currentOutput, 
+            { type: 'output', text: 'Entering the Matrix...' },
+            { type: 'system', text: loadingChars[loadingIndex] }
+          ]);
+          loadingIndex++;
+        } else {
+          clearInterval(loadingInterval);
+          setIsTyping(false);
+          
+          // Clear et lancer l'effet Matrix après le chargement
+          setTimeout(() => {
+            setOutput([]);
+            setShowMatrix(true);
+            
+            // Effet Matrix pendant 10 secondes puis reboot
+            setTimeout(() => {
+              setShowMatrix(false);
+              setOutput([]);
+              setHistory([]);
+              setHistoryIndex(-1);
+              setIsBooting(true);
+            }, 10000);
+          }, 300);
+        }
+      }, 250); // 250ms x 11 = ~3 secondes
+      
       return;
     }
 
@@ -518,20 +559,28 @@ Let's build something amazing together!`,
     >
       {/* Matrix effect */}
       {showMatrix && (
-        <div className="absolute inset-0 z-50 pointer-events-none">
+        <div className="absolute inset-0 z-50 pointer-events-none bg-black">
           <div className="matrix-rain">
-            {[...Array(50)].map((_, i) => (
+            {[...Array(80)].map((_, i) => (
               <div
                 key={i}
                 className="matrix-column"
                 style={{
-                  left: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 2}s`,
-                  animationDuration: `${2 + Math.random() * 3}s`
+                  left: `${(i * 1.25)}%`,
+                  animationDelay: `${Math.random() * 3}s`,
+                  animationDuration: `${4 + Math.random() * 4}s`
                 }}
               >
-                {[...Array(20)].map((_, j) => (
-                  <span key={j}>{String.fromCharCode(0x30A0 + Math.random() * 96)}</span>
+                {[...Array(30)].map((_, j) => (
+                  <span 
+                    key={j}
+                    style={{
+                      opacity: Math.max(0.1, 1 - (j * 0.05)),
+                      color: j === 0 ? '#fff' : '#0f0'
+                    }}
+                  >
+                    {String.fromCharCode(0x30A0 + Math.random() * 96)}
+                  </span>
                 ))}
               </div>
             ))}
@@ -621,17 +670,32 @@ Let's build something amazing together!`,
       )}
 
       <style jsx>{`
+        .matrix-rain {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+        
         .matrix-column {
           position: absolute;
-          top: -100%;
-          font-size: 20px;
+          top: -150%;
+          font-size: 18px;
           color: #0f0;
           animation: matrix-fall linear infinite;
-          text-shadow: 0 0 8px #0f0;
+          text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+          font-family: 'Courier New', monospace;
+          display: flex;
+          flex-direction: column;
+          letter-spacing: 0;
+          line-height: 1.2;
         }
         
         @keyframes matrix-fall {
-          to {
+          0% {
+            top: -150%;
+          }
+          100% {
             top: 100%;
           }
         }
