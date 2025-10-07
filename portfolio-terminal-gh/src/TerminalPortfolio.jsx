@@ -112,7 +112,7 @@ const TerminalPortfolio = () => {
   projects    - Projets & réalisations
   contact     - Me contacter
   lang en/fr  - Changer de langue
-  matrix      - Animation Matrix
+  matrix      - ???
   hire        - Message spécial recruteurs
   restart     - Redémarrer le terminal
   clear       - Effacer le terminal
@@ -357,22 +357,86 @@ Let's build something amazing together!`,
   useEffect(() => {
     if (isBooting) {
       let index = 0;
-      const bootInterval = setInterval(() => {
-        if (index < bootSequence.length) {
-          const item = bootSequence[index];
-          // Vérifier si c'est un objet avec le logo
-          if (typeof item === 'object' && item.component) {
-            setOutput(prev => [...prev, { type: 'logo' }]);
-          } else {
-            setOutput(prev => [...prev, { type: 'system', text: item }]);
-          }
-          index++;
-        } else {
-          clearInterval(bootInterval);
+      let currentCharIndex = 0;
+      let currentText = '';
+      let currentOutputIndex = 0;
+      let timeoutId = null;
+      let cancelled = false;
+      
+      const bootType = () => {
+        if (cancelled) return;
+        
+        if (index >= bootSequence.length) {
           setIsBooting(false);
+          setTypingLineIndex(-1);
+          return;
         }
-      }, 200);
-      return () => clearInterval(bootInterval);
+        
+        const item = bootSequence[index];
+        
+        // Si c'est le logo, l'afficher directement
+        if (typeof item === 'object' && item.component) {
+          setOutput(prev => [...prev, { type: 'logo' }]);
+          index++;
+          currentCharIndex = 0;
+          currentText = '';
+          currentOutputIndex++;
+          timeoutId = setTimeout(bootType, 50);
+          return;
+        }
+        
+        // Si c'est une ligne vide, l'afficher directement
+        if (item === '') {
+          setOutput(prev => [...prev, { type: 'system', text: '' }]);
+          index++;
+          currentCharIndex = 0;
+          currentText = '';
+          currentOutputIndex++;
+          timeoutId = setTimeout(bootType, 50);
+          return;
+        }
+        
+        // Typewriter pour les lignes de texte
+        if (currentCharIndex === 0) {
+          // Ajouter une nouvelle ligne vide
+          setOutput(prev => [...prev, { type: 'system', text: '' }]);
+          setTypingLineIndex(currentOutputIndex);
+        }
+        
+        if (currentCharIndex < item.length) {
+          currentText = item.substring(0, currentCharIndex + 1);
+          setOutput(prev => {
+            const newOutput = [...prev];
+            newOutput[currentOutputIndex] = { type: 'system', text: currentText };
+            return newOutput;
+          });
+          currentCharIndex++;
+          
+          // Scroll pendant la frappe
+          if (outputRef.current) {
+            outputRef.current.scrollTop = outputRef.current.scrollHeight;
+          }
+          
+          timeoutId = setTimeout(bootType, 15); // 15ms entre chaque caractère
+        } else {
+          // Ligne terminée, passer à la suivante
+          setTypingLineIndex(-1);
+          index++;
+          currentCharIndex = 0;
+          currentText = '';
+          currentOutputIndex++;
+          
+          timeoutId = setTimeout(bootType, 100); // Pause de 100ms entre les lignes
+        }
+      };
+      
+      bootType();
+      
+      // Cleanup
+      return () => {
+        cancelled = true;
+        if (timeoutId) clearTimeout(timeoutId);
+      };
     }
   }, [isBooting, lang]);
 
@@ -657,14 +721,14 @@ Let's build something amazing together!`,
         <pre className="text-xs animate-pulse">
 {`
     ╔═══════════════════════════════════════╗
-    ║   DEVELOPER • DEVOPS • FULL STACK    ║
+    ║    DEVELOPER • DEVOPS • FULL STACK    ║
     ╚═══════════════════════════════════════╝
           ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-         █░░░░░░░░░░░░░░░░░░░░░░░░█
-         █░ PYTHON • REACT • PHP ░█
-         █░ DOCKER • K8S • CI/CD ░█
-         █░░░░░░░░░░░░░░░░░░░░░░░░█
-          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+         █░░░░░░░░░░░░░░░░░░░░░░░░░░█
+         █░░ PYTHON • REACT • PHP ░░█
+         █░░ DOCKER • K8S • CI/CD ░░█
+         █░░░░░░░░░░░░░░░░░░░░░░░░░░█
+          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 `}
         </pre>
       </div>
@@ -673,7 +737,7 @@ Let's build something amazing together!`,
       <div className="mb-4 border-b border-green-800 pb-4 flex-shrink-0">
         <div className="flex items-center gap-2 mb-2">
           <Terminal className="w-6 h-6" />
-          <h1 className="text-xl font-bold">RAPHAEL_AUBERLET.terminal</h1>
+          <h1 className="text-xl font-bold">RAPHAELDEV.FR</h1>
           <button
             onClick={() => setLang(lang === 'fr' ? 'en' : 'fr')}
             className="ml-auto px-3 py-1 border border-green-600 hover:bg-green-900/30 transition-colors rounded"
@@ -714,7 +778,7 @@ Let's build something amazing together!`,
       {/* Input line - Fixed */}
       {!isBooting && (
         <div className="flex items-center gap-2 flex-shrink-0 pt-2 border-t border-green-800/30">
-          <span className="text-cyan-400">raphael@terminal:~$</span>
+          <span className="text-cyan-400">visitor@terminal:~$</span>
           <div className="flex-1 relative">
             <input
               ref={inputRef}
