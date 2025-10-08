@@ -110,9 +110,10 @@ const TerminalPortfolio = () => {
 
   const translations = {
     fr: {
-      welcome: "Bienvenue sur le terminal de Raphael Auberlet",
-      bootComplete: "Système chargé. Tapez 'help' pour commencer.",
-      help: `Commandes disponibles:
+      welcome: ">> Raphaël Auberlet • Responsable SI & DevOps Engineer",
+      bootComplete: "Disponible pour votre prochain défi technique • Tapez 'help' pour commencer",
+      help: `
+Commandes disponibles:
   about       - Qui suis-je ?
   skills      - Stack technique & expertise
   xp          - Parcours professionnel
@@ -121,7 +122,7 @@ const TerminalPortfolio = () => {
   lang en/fr  - Changer de langue
   matrix      - 🥚
   hire        - 💼 Message pour recruteurs
-  easter      - 🎁 Commandes cachées (pour les curieux)
+  easter      - 🎁 (pour les curieux)
   reboot      - Redémarrer le terminal
   clear       - Effacer l'écran
   help        - Afficher cette aide`,
@@ -395,7 +396,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
       easter: `
 ╔══════════════════════════════════════════════════════════╗
 ║           🎁 COMMANDES CACHÉES & EASTER EGGS             ║
-║        (Parce que les meilleurs devs sont curieux)       ║
+║         (Parce que les meilleurs sont curieux!)          ║
 ╚══════════════════════════════════════════════════════════╝
 
 🔓 HACKING & SÉCURITÉ
@@ -423,8 +424,8 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
       notFound: "Commande non reconnue. Tapez 'help' pour la liste des commandes."
     },
     en: {
-      welcome: "Welcome to Raphael Auberlet's terminal",
-      bootComplete: "System loaded. Type 'help' to start.",
+      welcome: ">> Raphaël Auberlet • IT Manager & DevOps Engineer",
+      bootComplete: "Available for your next technical challenge • Type 'help' to start",
       help: `Available commands:
   about       - Who am I?
   skills      - Tech stack & expertise
@@ -432,9 +433,9 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
   projects    - Key achievements
   contact     - Contact me
   lang en/fr  - Change language
-  matrix      - Easter egg 🟢
+  matrix      - 🥚
   hire        - 💼 Message for recruiters
-  easter      - 🎁 Hidden commands (for the curious)
+  easter      - 🎁 (for the curious)
   reboot     - reboot terminal
   clear       - Clear screen
   help        - Display this help`,
@@ -601,7 +602,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
 ╔═══════════════════════════════════════════════════════════╗
-║  WHY YOU SHOULD CONTACT ME NOW:                          ║
+║   WHY YOU SHOULD CONTACT ME NOW:                          ║
 ╚═══════════════════════════════════════════════════════════╝
 
 🎯 YOU'RE LOOKING FOR SOMEONE WHO...
@@ -1159,16 +1160,30 @@ PS: Type 'hire' to use this power for good 😎`;
     // Easter egg: coffee
     if (trimmedCmd === 'coffee' || trimmedCmd === 'café') {
       const coffeeArt = `
-      ☕
-     (  )
-    (    )
-   (______)
-   |      |]
-   |      |
-    \\____/
+                   ( (
+                    ) )
+                  ........
+                  |      |]
+                  \\      /
+                   \`----'
+               
+           ╔══════════════════════════╗
+           ║   ☕ COFFEE BREAK ☕     ║
+           ╚══════════════════════════╝
+           
+              .-------------------.
+             /    .-""""-.        /|
+            |    /        \\      / |
+            |   |  O    O  |    /  |
+            |    \\  ---  /     /   |
+             \\    \`-----'     /   /
+              '---------------'   /
+                \\ ☕ ☕ ☕ ☕ /
+                 '-------------'
     
-${lang === 'fr' ? '☕ Un café pour le dev ! Ça aide à coder...' : '☕ Coffee for the dev! It helps to code...'}
-${lang === 'fr' ? '💡 Conseil : Essayez aussi "beer" 🍺' : '💡 Tip: Try "beer" too 🍺'}`;
+${lang === 'fr' ? '☕ Un bon café pour les neurones !' : '☕ Good coffee for the neurons!'}
+${lang === 'fr' ? '💻 Fuel du développeur : 90% café, 10% code' : '💻 Developer fuel: 90% coffee, 10% code'}
+${lang === 'fr' ? '💡 Conseil : Essayez aussi "beer" pour l\'after-work 🍺' : '💡 Tip: Also try "beer" for after-work 🍺'}`;
       typeText(coffeeArt);
       return;
     }
@@ -1176,15 +1191,30 @@ ${lang === 'fr' ? '💡 Conseil : Essayez aussi "beer" 🍺' : '💡 Tip: Try "b
     // Easter egg: beer
     if (trimmedCmd === 'beer' || trimmedCmd === 'bière') {
       const beerArt = `
-      🍺
-     |  |
-     |  |
-     |  |
-     |__|
-    /____\\
+           ╔══════════════════════════╗
+           ║   🍺 BEER O'CLOCK 🍺    ║
+           ╚══════════════════════════╝
+           
+                    .---.
+                   /     \\
+                  |  🍺  |
+                  |       |
+                  |  ~~~  |
+                  |  ~~~  |
+                  |  ~~~  |
+                  |       |
+                   \\     /
+                    '---'
+                   /     \\
+                  /_______\\
+           
+              .  * .  *.  * . *
+             *  CHEERS! SANTÉ!  *
+              *  .  *  .  *  .
     
-${lang === 'fr' ? '🍺 Après le travail, une bière bien méritée !' : '🍺 After work, a well-deserved beer!'}
-${lang === 'fr' ? '🎉 Santé ! Cheers ! 乾杯!' : '🎉 Cheers! Santé ! 乾杯!'}`;
+${lang === 'fr' ? '🍺 Après le code, la mousse bien méritée !' : '🍺 After the code, a well-deserved beer!'}
+${lang === 'fr' ? '🎉 Santé ! Cheers ! Prost ! 乾杯! Salud !' : '🎉 Cheers! Santé ! Prost ! 乾杯! Salud !'}
+${lang === 'fr' ? '⚠️  À consommer avec modération (contrairement aux lignes de code)' : '⚠️  Drink responsibly (unlike lines of code)'}`;
       typeText(beerArt);
       return;
     }
@@ -1301,29 +1331,30 @@ ${lang === 'fr' ? '💡 Astuce : Les commandes Linux standards ne marchent pas i
       const secretText = lang === 'fr'
         ? `📄 secret.txt:
 
-🎯 Félicitations ! Tu as trouvé le fichier secret !
+🎯 Bravo ! Vous avez trouvé le fichier caché !
 
-🔍 Les meilleurs devs sont curieux...
-💼 C'est exactement le genre de personne que je cherche dans mon équipe.
-🚀 Prêt(e) à rejoindre l'aventure ?
+🔍 La curiosité est une qualité que j'apprécie beaucoup.
+💎 Elle fait partie des valeurs qui me définissent.
+✨ Et visiblement, on partage cette approche !
 
-➡️  Tapez "hire" pour en savoir plus !`
+➡️  Tapez "hire" pour découvrir comment je peux contribuer à vos projets`
         : `📄 secret.txt:
 
-🎯 Congratulations! You found the secret file!
+🎯 Well done! You found the hidden file!
 
-🔍 The best devs are curious...
-💼 That's exactly the kind of person I want in my team.
-🚀 Ready to join the adventure?
+🔍 Curiosity is a quality I deeply appreciate.
+💎 It's one of the values that define me.
+✨ And apparently, we share this approach!
 
-➡️  Type "hire" to learn more!`;
+➡️  Type "hire" to discover how I can contribute to your projects`;
       typeText(secretText);
       return;
     }
 
     // Easter egg: ping
     if (trimmedCmd === 'ping' || trimmedCmd.startsWith('ping ')) {
-      const pingText = `PING raphaeldev.fr (185.199.108.153) 56(84) bytes of data.
+      const pingText = `
+PING raphaeldev.fr (185.199.108.153) 56(84) bytes of data.
 64 bytes from raphaeldev.fr: icmp_seq=1 ttl=64 time=0.042 ms
 64 bytes from raphaeldev.fr: icmp_seq=2 ttl=64 time=0.037 ms
 64 bytes from raphaeldev.fr: icmp_seq=3 ttl=64 time=0.039 ms
@@ -1361,14 +1392,17 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 
 💎 STATUT : Vous êtes officiellement passé niveau EXPERT !
 
-🎯 VOUS AVEZ LE PROFIL DU CANDIDAT IDÉAL :
-   → Curieux et persévérant ✓
-   → Aime les défis techniques ✓
-   → Sens de l'humour développé ✓
-   → Attention aux détails ✓
+🎯 CE QUI NOUS RAPPROCHE :
+   → La curiosité et la persévérance ✓
+   → L'amour des défis techniques ✓
+   → Un bon sens de l'humour ✓
+   → L'attention aux détails ✓
 
-💼 Sérieusement : tapez 'hire' pour discuter d'opportunités !
-   Quelqu'un qui trouve ce genre de trucs mérite qu'on discute 😉`
+💼 Si ce profil vous intéresse : tapez 'hire' !
+   J'aimerais beaucoup échanger avec vous 🤝
+
+🤫 PS : Il existe UN easter egg encore plus secret...
+   Indices : 🐱 + 🌀 + 4 lettres...`
         : `
 🏆 ACHIEVEMENT UNLOCKED: "The Curious One"
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1389,15 +1423,224 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 
 💎 STATUS: You've officially reached EXPERT level!
 
-🎯 YOU HAVE THE IDEAL CANDIDATE PROFILE:
-   → Curious and persistent ✓
-   → Loves technical challenges ✓
-   → Great sense of humor ✓
+🎯 WHAT BRINGS US TOGETHER:
+   → Curiosity and persistence ✓
+   → Love for technical challenges ✓
+   → A good sense of humor ✓
    → Attention to detail ✓
 
-💼 Seriously: type 'hire' to discuss opportunities!
-   Someone who finds this kind of stuff deserves a chat 😉`;
+💼 If this profile interests you: type 'hire'!
+   I'd love to chat with you 🤝
+
+🤫 PS: There is ONE even more secret easter egg...
+   Hints: 🐱 + 🌀 + 4 letters...`;
       typeText(godmodeText);
+      return;
+    }
+
+    // Easter egg ULTIME : OIIA (Spinning Cat)
+    // Multiples façons de le déclencher
+    if (trimmedCmd === 'oiia' || 
+        trimmedCmd === 'spinning cat' || 
+        trimmedCmd === 'spin' ||
+        trimmedCmd === '🐱🌀' ||
+        trimmedCmd === 'cat spin' ||
+        trimmedCmd === 'spincat') {
+      
+      const warningSequence = lang === 'fr' ? [
+        '⚠️  ALERTE SYSTÈME ⚠️',
+        '',
+        '🚨 Activation imminente du PROTOCOLE OIIA',
+        '',
+        '❓ Pourquoi diable voudriez-vous lancer cette commande ?',
+        '   → La curiosité l\'emporte sur votre bon sens ?',
+        '   → Les chats qui tournent vous fascinent à ce point ?',
+        '   → Vous avez fini de consulter le CV au moins ?',
+        '',
+        '⏰ Vous pouvez encore faire demi-tour...',
+        '💭 Prenez le temps d\'y réfléchir...',
+        '',
+        '🔄 Pour continuer quand même : "oiia confirm"',
+        '❌ Pour annuler (choix sage) : n\'importe quoi d\'autre',
+      ] : [
+        '⚠️  SYSTEM WARNING ⚠️',
+        '',
+        '🚨 You are about to activate PROTOCOL OIIA',
+        '',
+        '❓ WHY would you want to do that?',
+        '   → Are you curious enough to risk your mental health?',
+        '   → Do you like spinning cats?',
+        '   → Have you really finished reading the resume?',
+        '',
+        '⏰ There\'s still time to back out...',
+        '💭 Think carefully...',
+        '',
+        '🔄 To confirm, type "oiia confirm"',
+        '❌ To cancel, type anything else',
+      ];
+
+      warningSequence.forEach(line => {
+        setOutput(prev => [...prev, { type: 'system', text: line }]);
+      });
+      return;
+    }
+
+    // Confirmation OIIA - Niveau 2
+    if (trimmedCmd === 'oiia confirm') {
+      const secondWarning = lang === 'fr' ? [
+        '',
+        '🤔 Sérieusement ?',
+        '',
+        '⚠️  SECOND AVERTISSEMENT ⚠️',
+        '',
+        '📋 Voici ce qui va vous arriver :',
+        '   1. L\'écran passera en plein écran',
+        '   2. Un chat tournera sans fin',
+        '   3. De la musique envahira vos oreilles',
+        '   4. Impossible de revenir en arrière',
+        '   5. Votre productivité chutera de 100%',
+        '   6. Vos collègues vous jugeront',
+        '',
+        '😱 Vous êtes VRAIMENT sûr de vouloir ça ?',
+        '',
+        '✅ Pour lancer (assumez) : "oiia launch"',
+        '🏃 Pour esquiver (prudent) : autre chose',
+      ] : [
+        '',
+        '🤔 Really?',
+        '',
+        '⚠️  SECOND WARNING ⚠️',
+        '',
+        '📋 What will happen:',
+        '   1. Your screen will go fullscreen',
+        '   2. A cat will spin',
+        '   3. Music will play',
+        '   4. You can\'t go back',
+        '   5. Your productivity will drop by 100%',
+        '',
+        '😱 Are you ABSOLUTELY SURE?',
+        '',
+        '✅ To launch: type "oiia launch"',
+        '🏃 To run away like a coward: type something else',
+      ];
+
+      secondWarning.forEach(line => {
+        setOutput(prev => [...prev, { type: 'system', text: line }]);
+      });
+      return;
+    }
+
+    // Lancement FINAL
+    if (trimmedCmd === 'oiia launch' || trimmedCmd === 'oiia yes' || trimmedCmd === 'oiia go') {
+      const finalCountdown = lang === 'fr' ? [
+        '',
+        '🎯 Bon... Vous l\'aurez voulu.',
+        '',
+        '⏱️  LANCEMENT IMMINENT...',
+        '   ▸ 3...',
+        '   ▸ 2...',
+        '   ▸ 1...',
+        '',
+        '🌀 ✨ OIIA ACTIVÉ ✨ 🐱',
+        '',
+        '🚀 Que la force du chat tournoyant soit avec vous !',
+        ''
+      ] : [
+        '',
+        '🎯 Alright. You asked for it.',
+        '',
+        '⏱️  LAUNCHING IN...',
+        '   3...',
+        '   2...',
+        '   1...',
+        '',
+        '🌀 OIIA ACTIVATED 🐱',
+        '',
+        '🚀 May the spinning cat force be with you!',
+        ''
+      ];
+
+      finalCountdown.forEach(line => {
+        setOutput(prev => [...prev, { type: 'system', text: line }]);
+      });
+
+      // Lancer la vidéo en fullscreen après 2 secondes
+      setTimeout(() => {
+        // Créer un iframe fullscreen
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/IxX_QHay02M?si=XF7tlgXKAE0LlGcE&autoplay=1&mute=0&controls=0&loop=1&playlist=IxX_QHay02M';
+        iframe.style.position = 'fixed';
+        iframe.style.top = '0';
+        iframe.style.left = '0';
+        iframe.style.width = '100vw';
+        iframe.style.height = '100vh';
+        iframe.style.border = 'none';
+        iframe.style.zIndex = '9999';
+        iframe.allow = 'autoplay; fullscreen';
+        iframe.allowFullscreen = true;
+        
+        document.body.appendChild(iframe);
+
+        // Tenter le fullscreen
+        if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+        } else if (iframe.webkitRequestFullscreen) {
+          iframe.webkitRequestFullscreen();
+        } else if (iframe.mozRequestFullScreen) {
+          iframe.mozRequestFullScreen();
+        } else if (iframe.msRequestFullscreen) {
+          iframe.msRequestFullscreen();
+        }
+
+        // Bouton pour fermer (ESC ou clic)
+        const closeButton = document.createElement('button');
+        closeButton.innerHTML = '❌ FERMER (ESC)';
+        closeButton.style.position = 'fixed';
+        closeButton.style.top = '20px';
+        closeButton.style.right = '20px';
+        closeButton.style.zIndex = '10000';
+        closeButton.style.padding = '10px 20px';
+        closeButton.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        closeButton.style.color = '#00ff00';
+        closeButton.style.border = '2px solid #00ff00';
+        closeButton.style.borderRadius = '5px';
+        closeButton.style.cursor = 'pointer';
+        closeButton.style.fontFamily = 'monospace';
+        closeButton.style.fontSize = '14px';
+        
+        closeButton.onclick = () => {
+          document.body.removeChild(iframe);
+          document.body.removeChild(closeButton);
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+          // Reboot du terminal
+          setOutput([]);
+          setHistory([]);
+          setHistoryIndex(-1);
+          setIsBooting(true);
+        };
+
+        document.body.appendChild(closeButton);
+
+        // Fermer avec ESC
+        const handleEsc = (e) => {
+          if (e.key === 'Escape') {
+            if (document.body.contains(iframe)) {
+              document.body.removeChild(iframe);
+              document.body.removeChild(closeButton);
+            }
+            document.removeEventListener('keydown', handleEsc);
+            // Reboot du terminal
+            setOutput([]);
+            setHistory([]);
+            setHistoryIndex(-1);
+            setIsBooting(true);
+          }
+        };
+        document.addEventListener('keydown', handleEsc);
+      }, 2000);
+
       return;
     }
 
