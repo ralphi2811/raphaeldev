@@ -310,11 +310,11 @@ const TerminalPortfolio = () => {
    → linkedin.com/in/raphaelauberlet
    → Réseau professionnel & recommandations
 
-� Téléphone
+☎️ Téléphone
    → +262 693 39 58 98
-   → WhatsApp / Signal disponibles
+   → WhatsApp / Télégram disponibles
 
-�📍 Localisation
+📍 Localisation
    → Le Tampon, La Réunion (974)
    → Remote-first • Déplacements France/Europe OK
 
@@ -535,7 +535,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
    → Full portfolio & references available
    → Code samples: github.com/ralphi2811`,
       contact: `╔═══════════════════════════════════════════════════════════╗
-║            📬 CONTACT & LINKS                             ║
+║                   📬 CONTACT & LINKS                      ║
 ╚═══════════════════════════════════════════════════════════╝
 
 📧 Email → contact@raphaeldev.fr (24h response guaranteed)
@@ -543,7 +543,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 🔗 LinkedIn → linkedin.com/in/raphaelauberlet
 ☎️ Phone → +262 693 39 58 98
 📍 Location → Le Tampon, Reunion Island (974)
-   Remote-first • Travel France/Europe OK
+💻 Remote-first • Travel France/Europe OK
 
 💡 AVAILABILITY
    ✅ Freelance/consulting missions
