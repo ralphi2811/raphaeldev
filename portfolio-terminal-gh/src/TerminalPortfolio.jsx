@@ -121,6 +121,7 @@ const TerminalPortfolio = () => {
   lang en/fr  - Changer de langue
   matrix      - 🥚
   hire        - 💼 Message pour recruteurs
+  easter      - 🎁 Commandes cachées (pour les curieux)
   reboot      - Redémarrer le terminal
   clear       - Effacer l'écran
   help        - Afficher cette aide`,
@@ -391,6 +392,34 @@ const TerminalPortfolio = () => {
 
 P.S. : Si vous lisez ça, c'est que vous appréciez les profils
        originaux. On est déjà sur la même longueur d'onde 🤝`,
+      easter: `
+╔══════════════════════════════════════════════════════════╗
+║           🎁 COMMANDES CACHÉES & EASTER EGGS             ║
+║        (Parce que les meilleurs devs sont curieux)       ║
+╚══════════════════════════════════════════════════════════╝
+
+🔓 HACKING & SÉCURITÉ
+  hack/hacker     - Mode pirate activé (accès root garanti !)
+  sudo [cmd]      - Essayez, pour voir... 😏
+
+☕ PAUSE CAFÉ
+  coffee/café     - Un café virtuel pour le dev
+  beer/bière      - Pour l'after-work (avec modération !)
+
+🎮 CULTURE GEEK
+  konami          - ↑↑↓↓←→←→BA (les vrais savent)
+  42              - La réponse à LA question
+  cat secret.txt  - Pour les explorateurs de fichiers
+
+🖥️  COMMANDES UNIX (FAKÉES)
+  ls/dir          - Lister les "fichiers"
+  whoami          - Qui êtes-vous vraiment ?
+  ping            - Test de connexion réseau
+
+💡 ASTUCE : Certaines commandes ont des variantes...
+   Essayez en français ET en anglais !
+
+🎯 CHALLENGE : Trouvez la commande qui n'est PAS listée ici 😉`,
       notFound: "Commande non reconnue. Tapez 'help' pour la liste des commandes."
     },
     en: {
@@ -405,6 +434,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
   lang en/fr  - Change language
   matrix      - Easter egg 🟢
   hire        - 💼 Message for recruiters
+  easter      - 🎁 Hidden commands (for the curious)
   reboot     - reboot terminal
   clear       - Clear screen
   help        - Display this help`,
@@ -611,6 +641,34 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 
 P.S.: If you're reading this, you appreciate original profiles.
       We're already on the same wavelength 🤝`,
+      easter: `
+╔══════════════════════════════════════════════════════════╗
+║           🎁 HIDDEN COMMANDS & EASTER EGGS               ║
+║         (Because the best devs are curious)              ║
+╚══════════════════════════════════════════════════════════╝
+
+🔓 HACKING & SECURITY
+  hack/hacker     - Pirate mode ON (root access guaranteed!)
+  sudo [cmd]      - Try it, you'll see... 😏
+
+☕ COFFEE BREAK
+  coffee/café     - Virtual coffee for the dev
+  beer/bière      - For after-work (drink responsibly!)
+
+🎮 GEEK CULTURE
+  konami          - ↑↑↓↓←→←→BA (real gamers know)
+  42              - The answer to THE question
+  cat secret.txt  - For file explorers
+
+🖥️  UNIX COMMANDS (FAKED)
+  ls/dir          - List "files"
+  whoami          - Who are you really?
+  ping            - Network connection test
+
+💡 TIP: Some commands have variants...
+   Try in French AND English!
+
+🎯 CHALLENGE: Find the command that's NOT listed here 😉`,
       notFound: "Command not recognized. Type 'help' for command list."
     }
   };
@@ -952,6 +1010,11 @@ P.S.: If you're reading this, you appreciate original profiles.
       return;
     }
 
+    if (trimmedCmd === 'easter' || trimmedCmd === 'eggs') {
+      typeText(t.easter);
+      return;
+    }
+
     if (trimmedCmd === 'about') {
       typeText(t.about);
       return;
@@ -1057,6 +1120,284 @@ P.S.: If you're reading this, you appreciate original profiles.
         type: 'error', 
         text: "Nice try! But I'm smarter than that 😉" 
       }]);
+      return;
+    }
+
+    // Easter egg: hacker mode
+    if (trimmedCmd === 'hack' || trimmedCmd === 'hacker') {
+      const hackerText = lang === 'fr' 
+        ? `🔓 INITIALISATION DU MODE HACKER...
+    
+[████████████████████████] 100%
+
+✅ Accès root obtenu
+✅ Firewall contourné
+✅ Cryptage désactivé
+✅ Base de données accessible
+
+⚠️  AVERTISSEMENT : Vous êtes maintenant en mode GOD 
+💀 Avec un grand pouvoir vient une grande responsabilité...
+
+PS : Tapez 'hire' pour utiliser ce pouvoir pour le bien 😎`
+        : `🔓 INITIALIZING HACKER MODE...
+    
+[████████████████████████] 100%
+
+✅ Root access granted
+✅ Firewall bypassed
+✅ Encryption disabled
+✅ Database accessible
+
+⚠️  WARNING: You are now in GOD mode
+💀 With great power comes great responsibility...
+
+PS: Type 'hire' to use this power for good 😎`;
+      typeText(hackerText);
+      return;
+    }
+
+    // Easter egg: coffee
+    if (trimmedCmd === 'coffee' || trimmedCmd === 'café') {
+      const coffeeArt = `
+      ☕
+     (  )
+    (    )
+   (______)
+   |      |]
+   |      |
+    \\____/
+    
+${lang === 'fr' ? '☕ Un café pour le dev ! Ça aide à coder...' : '☕ Coffee for the dev! It helps to code...'}
+${lang === 'fr' ? '💡 Conseil : Essayez aussi "beer" 🍺' : '💡 Tip: Try "beer" too 🍺'}`;
+      typeText(coffeeArt);
+      return;
+    }
+
+    // Easter egg: beer
+    if (trimmedCmd === 'beer' || trimmedCmd === 'bière') {
+      const beerArt = `
+      🍺
+     |  |
+     |  |
+     |  |
+     |__|
+    /____\\
+    
+${lang === 'fr' ? '🍺 Après le travail, une bière bien méritée !' : '🍺 After work, a well-deserved beer!'}
+${lang === 'fr' ? '🎉 Santé ! Cheers ! 乾杯!' : '🎉 Cheers! Santé ! 乾杯!'}`;
+      typeText(beerArt);
+      return;
+    }
+
+    // Easter egg: konami code easter egg
+    if (trimmedCmd === 'konami' || trimmedCmd === '↑↑↓↓←→←→ba') {
+      const konamiText = lang === 'fr'
+        ? `🎮 CODE KONAMI ACTIVÉ !
+    
+╔═══════════════════════════════╗
+║  🌟 +30 VIES SUPPLÉMENTAIRES  ║
+║  ⚡ MODE INVINCIBLE ON         ║
+║  🚀 VITESSE x2                ║
+║  💎 TOUS LES POWER-UPS        ║
+╚═══════════════════════════════╝
+
+🎯 Achievement Unlocked: "Old School Gamer"
+👾 Tu connais les classiques ! Respect !`
+        : `🎮 KONAMI CODE ACTIVATED!
+    
+╔═══════════════════════════════╗
+║  🌟 +30 EXTRA LIVES           ║
+║  ⚡ INVINCIBLE MODE ON         ║
+║  🚀 SPEED x2                  ║
+║  💎 ALL POWER-UPS             ║
+╚═══════════════════════════════╝
+
+🎯 Achievement Unlocked: "Old School Gamer"
+👾 You know the classics! Respect!`;
+      typeText(konamiText);
+      return;
+    }
+
+    // Easter egg: sudo
+    if (trimmedCmd === 'sudo' || trimmedCmd.startsWith('sudo ')) {
+      const sudoText = lang === 'fr'
+        ? `🔐 [sudo] mot de passe pour visitor : 
+⏳ Authentification en cours...
+❌ Désolé, essayez encore.
+❌ sudo: 3 tentatives d'authentification incorrectes
+🚫 Cet incident sera signalé.
+
+😏 Astuce : Essayez "hack" à la place...`
+        : `🔐 [sudo] password for visitor: 
+⏳ Authenticating...
+❌ Sorry, try again.
+❌ sudo: 3 incorrect authentication attempts
+🚫 This incident will be reported.
+
+😏 Hint: Try "hack" instead...`;
+      typeText(sudoText);
+      return;
+    }
+
+    // Easter egg: 42
+    if (trimmedCmd === '42') {
+      const text42 = lang === 'fr'
+        ? `🌌 42 : La réponse à la grande question sur la vie, l'univers et le reste.
+
+"Après des millions d'années de calcul, l'ordinateur Deep Thought 
+a enfin trouvé la réponse : 42"
+
+💭 Mais quelle était la question ?
+
+🤔 Douglas Adams approuve ce message.`
+        : `🌌 42: The Answer to the Ultimate Question of Life, the Universe, and Everything.
+
+"After millions of years of computation, the supercomputer Deep Thought 
+finally found the answer: 42"
+
+💭 But what was the question?
+
+🤔 Douglas Adams approves this message.`;
+      typeText(text42);
+      return;
+    }
+
+    // Easter egg: ls
+    if (trimmedCmd === 'ls' || trimmedCmd === 'dir') {
+      const lsText = `
+drwxr-xr-x  2 visitor visitor 4096 Oct  8 2025 ./
+drwxr-xr-x  3 root    root    4096 Oct  8 2025 ../
+-rw-r--r--  1 visitor visitor  220 Oct  8 2025 .bash_logout
+-rw-r--r--  1 visitor visitor 3526 Oct  8 2025 .bashrc
+-rw-r--r--  1 visitor visitor  807 Oct  8 2025 .profile
+-rwxr-xr-x  1 visitor visitor 8192 Oct  8 2025 skills.exe
+-rwxr-xr-x  1 visitor visitor 4096 Oct  8 2025 experience.dat
+-rwxr-xr-x  1 visitor visitor 2048 Oct  8 2025 hire_me.sh
+-rw-r--r--  1 visitor visitor  666 Oct  8 2025 cv.pdf
+-rw-r--r--  1 visitor visitor   42 Oct  8 2025 secret.txt
+
+${lang === 'fr' ? '💡 Astuce : Les commandes Linux standards ne marchent pas ici... Tapez "help" !' : '💡 Hint: Standard Linux commands don\'t work here... Type "help"!'}`;
+      typeText(lsText);
+      return;
+    }
+
+    // Easter egg: whoami
+    if (trimmedCmd === 'whoami') {
+      const whoamiText = lang === 'fr'
+        ? `visitor
+
+🤔 Mais la vraie question est : qui est Raphaël ?
+💡 Tapez "about" pour le découvrir !`
+        : `visitor
+
+🤔 But the real question is: who is Raphaël?
+💡 Type "about" to find out!`;
+      typeText(whoamiText);
+      return;
+    }
+
+    // Easter egg: cat secret.txt
+    if (trimmedCmd === 'cat secret.txt' || trimmedCmd === 'cat secret') {
+      const secretText = lang === 'fr'
+        ? `📄 secret.txt:
+
+🎯 Félicitations ! Tu as trouvé le fichier secret !
+
+🔍 Les meilleurs devs sont curieux...
+💼 C'est exactement le genre de personne que je cherche dans mon équipe.
+🚀 Prêt(e) à rejoindre l'aventure ?
+
+➡️  Tapez "hire" pour en savoir plus !`
+        : `📄 secret.txt:
+
+🎯 Congratulations! You found the secret file!
+
+🔍 The best devs are curious...
+💼 That's exactly the kind of person I want in my team.
+🚀 Ready to join the adventure?
+
+➡️  Type "hire" to learn more!`;
+      typeText(secretText);
+      return;
+    }
+
+    // Easter egg: ping
+    if (trimmedCmd === 'ping' || trimmedCmd.startsWith('ping ')) {
+      const pingText = `PING raphaeldev.fr (185.199.108.153) 56(84) bytes of data.
+64 bytes from raphaeldev.fr: icmp_seq=1 ttl=64 time=0.042 ms
+64 bytes from raphaeldev.fr: icmp_seq=2 ttl=64 time=0.037 ms
+64 bytes from raphaeldev.fr: icmp_seq=3 ttl=64 time=0.039 ms
+64 bytes from raphaeldev.fr: icmp_seq=4 ttl=64 time=0.041 ms
+
+--- raphaeldev.fr ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3ms
+rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
+
+✅ ${lang === 'fr' ? 'Serveur opérationnel !' : 'Server operational!'}`;
+      typeText(pingText);
+      return;
+    }
+
+    // Easter egg SECRET (non documenté - le challenge !)
+    if (trimmedCmd === 'godmode' || trimmedCmd === 'god mode') {
+      const godmodeText = lang === 'fr'
+        ? `
+🏆 ACHIEVEMENT UNLOCKED: "The Curious One"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 FÉLICITATIONS ! Vous avez trouvé la commande secrète !
+
+╔═══════════════════════════════════════════════════════╗
+║                  ⚡ GOD MODE ACTIVÉ ⚡                ║
+╚═══════════════════════════════════════════════════════╝
+
+🌟 BONUS DÉBLOQUÉS :
+   ✓ Vision parfaite du code (+100% de clarté)
+   ✓ Bugs évaporés automatiquement
+   ✓ Café illimité ☕☕☕
+   ✓ Tickets Jira qui se ferment tous seuls
+   ✓ Meetings raccourcis de 90%
+   ✓ Production toujours stable (99.999% uptime)
+
+💎 STATUT : Vous êtes maintenant un 10x Developer !
+
+🎯 VOUS AVEZ LE PROFIL DU CANDIDAT IDÉAL :
+   → Curieux et persévérant ✓
+   → Aime les défis techniques ✓
+   → Sens de l'humour développé ✓
+   → Attention aux détails ✓
+
+💼 Sérieusement : tapez 'hire' pour discuter d'opportunités !
+   Quelqu'un qui trouve ce genre de trucs mérite qu'on discute 😉`
+        : `
+🏆 ACHIEVEMENT UNLOCKED: "The Curious One"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 CONGRATULATIONS! You found the secret command!
+
+╔═══════════════════════════════════════════════════════╗
+║                  ⚡ GOD MODE ACTIVATED ⚡             ║
+╚═══════════════════════════════════════════════════════╝
+
+🌟 UNLOCKED BONUSES:
+   ✓ Perfect code vision (+100% clarity)
+   ✓ Bugs automatically evaporated
+   ✓ Unlimited coffee ☕☕☕
+   ✓ Jira tickets that close themselves
+   ✓ Meetings shortened by 90%
+   ✓ Always stable production (99.999% uptime)
+
+💎 STATUS: You are now a 10x Developer!
+
+🎯 YOU HAVE THE IDEAL CANDIDATE PROFILE:
+   → Curious and persistent ✓
+   → Loves technical challenges ✓
+   → Great sense of humor ✓
+   → Attention to detail ✓
+
+💼 Seriously: type 'hire' to discuss opportunities!
+   Someone who finds this kind of stuff deserves a chat 😉`;
+      typeText(godmodeText);
       return;
     }
 
