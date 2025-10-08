@@ -2,11 +2,18 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Terminal, Code, Briefcase, Mail, Globe, Zap } from 'lucide-react';
 
 const TerminalPortfolio = () => {
+  // Détection automatique de la langue du navigateur
+  const detectLanguage = () => {
+    const browserLang = navigator.language || navigator.userLanguage;
+    // Si la langue du navigateur commence par 'fr', on retourne 'fr', sinon 'en'
+    return browserLang.toLowerCase().startsWith('fr') ? 'fr' : 'en';
+  };
+
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([]);
   const [history, setHistory] = useState([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
-  const [lang, setLang] = useState('fr');
+  const [lang, setLang] = useState(detectLanguage());
   const [isBooting, setIsBooting] = useState(true);
   const [showMatrix, setShowMatrix] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
@@ -114,7 +121,7 @@ const TerminalPortfolio = () => {
   lang en/fr  - Changer de langue
   matrix      - Easter egg 🟢
   hire        - 💼 Message pour recruteurs
-  restart     - Redémarrer le terminal
+  reboot     - Redémarrer le terminal
   clear       - Effacer l'écran
   help        - Afficher cette aide`,
       about: `╔═══════════════════════════════════════════════════════════╗
@@ -122,7 +129,7 @@ const TerminalPortfolio = () => {
 ║  Responsable SI • DevOps Engineer • Problem Solver        ║
 ╚═══════════════════════════════════════════════════════════╝
 
-� MA MISSION : Garder le navire à flot ET le moderniser
+🪖 MA MISSION : Garder le navire à flot ET le moderniser
    → Expert en transformation digitale et automatisation
    → De l'architecture système au déploiement en production
    → Manager technique qui code encore (et qui adore ça !)
@@ -183,7 +190,7 @@ const TerminalPortfolio = () => {
   ▸ Résolution de problèmes complexes
   ▸ Veille technologique permanente`,
       experience: `╔═══════════════════════════════════════════════════════════╗
-║         🚀 PARCOURS PROFESSIONNEL                         ║
+║               🚀 PARCOURS PROFESSIONNEL                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
 [2023 - Présent] SICALAIT - La Réunion
@@ -288,7 +295,7 @@ const TerminalPortfolio = () => {
    → Portfolio complet & références disponibles sur demande
    → Code samples sur GitHub : github.com/ralphi2811`,
       contact: `╔═══════════════════════════════════════════════════════════╗
-║            📬 CONTACT & LIENS                             ║
+║                  📬 CONTACT & LIENS                       ║
 ╚═══════════════════════════════════════════════════════════╝
 
 📧 Email
@@ -330,7 +337,7 @@ const TerminalPortfolio = () => {
 ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
 ╔═══════════════════════════════════════════════════════════╗
-║  POURQUOI VOUS DEVRIEZ ME CONTACTER MAINTENANT :         ║
+║     POURQUOI VOUS DEVRIEZ ME CONTACTER MAINTENANT :       ║
 ╚═══════════════════════════════════════════════════════════╝
 
 🎯 VOUS CHERCHEZ QUELQU'UN QUI...
@@ -359,9 +366,9 @@ const TerminalPortfolio = () => {
    → Automatiser ce qui doit l'être (IA inclus)
    → Former et booster vos équipes techniques
    → Gérer vos projets critiques de A à Z
-   → Ou juste résoudre ce problème que personne n'arrive à fix
+   → Ou juste résoudre ce problème que personne n'arrive à fixer
 
-� POSTES VISÉS :
+👁️ POSTES VISÉS :
    • Head of Engineering / CTO
    • Lead DevOps / SRE / Platform Engineer
    • Architecte Cloud / Solutions Architect
@@ -393,7 +400,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
   lang en/fr  - Change language
   matrix      - Easter egg 🟢
   hire        - 💼 Message for recruiters
-  restart     - Restart terminal
+  reboot     - reboot terminal
   clear       - Clear screen
   help        - Display this help`,
       about: `╔═══════════════════════════════════════════════════════════╗
@@ -401,12 +408,12 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 ║  IT Manager • DevOps Engineer • Problem Solver            ║
 ╚═══════════════════════════════════════════════════════════╝
 
-� MY MISSION: Keep the ship afloat AND modernize it
+🪖 MY MISSION: Keep the ship afloat AND modernize it
    → Expert in digital transformation & automation
    → From system architecture to production deployment
    → Tech manager who still codes (and loves it!)
 
-� MY SUPERPOWER: I don't code, I solve your problems
+💡 MY SUPERPOWER: I don't code, I solve your problems
    → 15+ years turning ideas into robust systems
    → Specialist in AI/LLM, automation, cloud & infrastructure
    → From legacy to cutting-edge: seen it all, done it all
@@ -419,7 +426,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
    → Successful career change, constant discovery
    → Still learning every day (currently: MCP, Ollama)`,
       skills: `╔═══════════════════════════════════════════════════════════╗
-║           💪 TECH STACK & EXPERTISE                       ║
+║               💪 TECH STACK & EXPERTISE                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
 🤖 AI & AUTOMATION (⭐ 2024-2025 Expertise)
@@ -462,7 +469,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
   ▸ Complex problem solving
   ▸ Continuous tech watch`,
       experience: `╔═══════════════════════════════════════════════════════════╗
-║         🚀 PROFESSIONAL BACKGROUND                        ║
+║              🚀 PROFESSIONAL BACKGROUND                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
 [2023 - Present] SICALAIT - Reunion Island
@@ -494,7 +501,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 
 📈 KEY FIGURES: 15+ years • 5 years critical infra • ∞ problems solved`,
       projects: `╔═══════════════════════════════════════════════════════════╗
-║          ⚡ KEY ACHIEVEMENTS                               ║
+║                   ⚡ KEY ACHIEVEMENTS                      ║
 ╚═══════════════════════════════════════════════════════════╝
 
 🏭 SICALAIT DIGITAL TRANSFORMATION (2023-2025)
@@ -504,7 +511,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
    📊 Impact: +80% deploy velocity, -60% incidents
    🛠️ Stack: GCP, Docker, Kubernetes, Odoo, Python
 
-� POS SYSTEMS & COMPLIANCE (2020-2023)
+💰 POS SYSTEMS & COMPLIANCE (2020-2023)
    → POS software maintenance (legal compliance)
    → Tax regulations & certifications  
    → Mobile inventory apps development
@@ -534,8 +541,8 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 📧 Email → contact@raphaeldev.fr (24h response guaranteed)
 💼 GitHub → github.com/ralphi2811
 🔗 LinkedIn → linkedin.com/in/raphaelauberlet
-� Phone → +262 693 39 58 98
-�📍 Location → Le Tampon, Reunion Island (974)
+☎️ Phone → +262 693 39 58 98
+📍 Location → Le Tampon, Reunion Island (974)
    Remote-first • Travel France/Europe OK
 
 💡 AVAILABILITY
@@ -579,7 +586,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
    → Manage your critical projects end-to-end
    → Or just fix that problem nobody can solve
 
-� TARGET POSITIONS:
+👁️ TARGET POSITIONS:
    • Head of Engineering / CTO
    • Lead DevOps / SRE / Platform Engineer
    • Cloud / Solutions Architect
@@ -792,6 +799,81 @@ P.S.: If you're reading this, you appreciate original profiles.
     }
   };
 
+  // Fonction pour détecter et rendre les liens cliquables
+  const renderTextWithLinks = (text) => {
+    // Regex pour détecter les URLs, emails et numéros de téléphone
+    const urlRegex = /(https?:\/\/[^\s]+|www\.[^\s]+|[a-zA-Z0-9.-]+\.(com|fr|net|org|io|dev)\/[^\s]*|github\.com\/[^\s]+|linkedin\.com\/[^\s]+)/gi;
+    const emailRegex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi;
+    const phoneRegex = /(\+\d{1,3}\s?\d{3}\s?\d{2}\s?\d{2}\s?\d{2})/gi;
+    
+    const parts = [];
+    let lastIndex = 0;
+    
+    // Combiner tous les matches
+    const allMatches = [];
+    
+    // URLs
+    let match;
+    while ((match = urlRegex.exec(text)) !== null) {
+      allMatches.push({ type: 'url', match: match[0], index: match.index });
+    }
+    
+    // Emails
+    emailRegex.lastIndex = 0;
+    while ((match = emailRegex.exec(text)) !== null) {
+      allMatches.push({ type: 'email', match: match[0], index: match.index });
+    }
+    
+    // Téléphones
+    phoneRegex.lastIndex = 0;
+    while ((match = phoneRegex.exec(text)) !== null) {
+      allMatches.push({ type: 'phone', match: match[0], index: match.index });
+    }
+    
+    // Trier par index
+    allMatches.sort((a, b) => a.index - b.index);
+    
+    // Construire les parties
+    allMatches.forEach((item, i) => {
+      // Texte avant le lien
+      if (item.index > lastIndex) {
+        parts.push(text.substring(lastIndex, item.index));
+      }
+      
+      // Le lien
+      let href = '';
+      if (item.type === 'url') {
+        href = item.match.startsWith('http') ? item.match : `https://${item.match}`;
+      } else if (item.type === 'email') {
+        href = `mailto:${item.match}`;
+      } else if (item.type === 'phone') {
+        href = `tel:${item.match.replace(/\s/g, '')}`;
+      }
+      
+      parts.push(
+        <a
+          key={i}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-cyan-400 hover:text-cyan-300 underline hover:brightness-125 transition-colors"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {item.match}
+        </a>
+      );
+      
+      lastIndex = item.index + item.match.length;
+    });
+    
+    // Texte restant
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+    
+    return parts.length > 0 ? parts : text;
+  };
+
   // Fonction pour afficher du texte lettre par lettre
   const typeText = (text, type = 'output') => {
     setIsTyping(true);
@@ -952,7 +1034,7 @@ P.S.: If you're reading this, you appreciate original profiles.
       return;
     }
 
-    if (trimmedCmd === 'restart') {
+    if (trimmedCmd === 'reboot') {
       setOutput([]);
       setHistory([]);
       setHistoryIndex(-1);
@@ -1090,7 +1172,7 @@ P.S.: If you're reading this, you appreciate original profiles.
               'text-green-300'
             }`}>
               <pre className="whitespace-pre-wrap break-words">
-                {line.text}
+                {renderTextWithLinks(line.text)}
                 {i === typingLineIndex && <span className="animate-pulse">▊</span>}
               </pre>
             </div>
