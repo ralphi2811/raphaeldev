@@ -1348,7 +1348,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 🎉 FÉLICITATIONS ! Vous avez trouvé la commande secrète !
 
 ╔═══════════════════════════════════════════════════════╗
-║                  ⚡ GOD MODE ACTIVÉ ⚡                ║
+║                  ⚡ GOD MODE ACTIVÉ ⚡                  ║
 ╚═══════════════════════════════════════════════════════╝
 
 🌟 BONUS DÉBLOQUÉS :
@@ -1359,7 +1359,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
    ✓ Meetings raccourcis de 90%
    ✓ Production toujours stable (99.999% uptime)
 
-💎 STATUT : Vous êtes maintenant un 10x Developer !
+💎 STATUT : Vous êtes officiellement passé niveau EXPERT !
 
 🎯 VOUS AVEZ LE PROFIL DU CANDIDAT IDÉAL :
    → Curieux et persévérant ✓
@@ -1376,7 +1376,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 🎉 CONGRATULATIONS! You found the secret command!
 
 ╔═══════════════════════════════════════════════════════╗
-║                  ⚡ GOD MODE ACTIVATED ⚡             ║
+║                  ⚡ GOD MODE ACTIVATED ⚡               ║
 ╚═══════════════════════════════════════════════════════╝
 
 🌟 UNLOCKED BONUSES:
@@ -1387,7 +1387,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
    ✓ Meetings shortened by 90%
    ✓ Always stable production (99.999% uptime)
 
-💎 STATUS: You are now a 10x Developer!
+💎 STATUS: You've officially reached EXPERT level!
 
 🎯 YOU HAVE THE IDEAL CANDIDATE PROFILE:
    → Curious and persistent ✓
