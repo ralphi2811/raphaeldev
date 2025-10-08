@@ -106,232 +106,494 @@ const TerminalPortfolio = () => {
       welcome: "Bienvenue sur le terminal de Raphael Auberlet",
       bootComplete: "Système chargé. Tapez 'help' pour commencer.",
       help: `Commandes disponibles:
-  about       - À propos de moi
-  skills      - Compétences techniques
-  experience  - Parcours professionnel
-  projects    - Projets & réalisations
+  about       - Qui suis-je ?
+  skills      - Stack technique & expertise
+  xp          - Parcours professionnel
+  projects    - Réalisations marquantes
   contact     - Me contacter
   lang en/fr  - Changer de langue
-  matrix      - ???
-  hire        - Message spécial recruteurs
+  matrix      - Easter egg 🟢
+  hire        - 💼 Message pour recruteurs
   restart     - Redémarrer le terminal
-  clear       - Effacer le terminal
+  clear       - Effacer l'écran
   help        - Afficher cette aide`,
-      about: `╔═══════════════════════════════════════════════╗
-║  RAPHAEL AUBERLET - Développeur Full Stack    ║
-║  Responsable Systèmes d'Information           ║
-╚═══════════════════════════════════════════════╝
+      about: `╔═══════════════════════════════════════════════════════════╗
+║  RAPHAEL AUBERLET                                         ║
+║  Responsable SI • DevOps Engineer • Problem Solver        ║
+╚═══════════════════════════════════════════════════════════╝
 
-🌴 Basé à La Réunion (974)
-💼 15+ ans d'expérience en développement
-🚀 Passionné de DevOps, Python, et nouvelles technos
+� MA MISSION : Garder le navire à flot ET le moderniser
+   → Expert en transformation digitale et automatisation
+   → De l'architecture système au déploiement en production
+   → Manager technique qui code encore (et qui adore ça !)
 
-De l'ébénisterie au code - un parcours atypique !
-J'ai transformé ma passion pour la création en expertise
-technique. Aujourd'hui, je conçois des systèmes robustes
-et élégants, comme je fabriquais des meubles sur mesure.`,
-      skills: `╔══════════════════════════════════════╗
-║        STACK TECHNIQUE               ║
-╚══════════════════════════════════════╝
+💡 MON SUPER-POUVOIR : Je ne code pas, je résous vos problèmes
+   → 15+ ans à transformer des idées en systèmes robustes
+   → Spécialiste IA/LLM, automation, cloud & infrastructure
+   → Du legacy au cutting-edge : j'ai tout vu, tout fait
 
-Backend:
-  ▸ Python / Django / Symfony
-  ▸ PHP / Node.js
-  ▸ API REST / SOAP
+🌴 BASÉ À LA RÉUNION (974)
+   📍 Remote-first • Déplacements possibles • Flexible
 
-DevOps:
-  ▸ Docker / Kubernetes
-  ▸ CI/CD (GitLab, GitHub Actions)
-  ▸ Linux Administration
+🎨 MON PARCOURS ATYPIQUE : De l'ébénisterie au DevOps
+   → Même passion pour l'excellence et la créativité
+   → Reconversion réussie, découvertes constantes
+   → J'apprends encore chaque jour (actuellement : MCP, Ollama)`,
+      skills: `╔═══════════════════════════════════════════════════════════╗
+║           💪 STACK TECHNIQUE & EXPERTISE                  ║
+╚═══════════════════════════════════════════════════════════╝
 
-Frontend:
-  ▸ JavaScript / React
-  ▸ HTML5 / CSS3 / Tailwind
-  ▸ WebDev / WinDev Mobile
+🤖 IA & AUTOMATION (⭐ Expertise 2024-2025)
+  ▸ LLM : Ollama, GPT-4, Claude, RAG
+  ▸ MCP : Développement & intégration professionnelle
+  ▸ n8n : Workflows d'automatisation avancés
+  ▸ Python AI Stack : LangChain, vector DBs
 
-Databases:
-  ▸ PostgreSQL / MySQL
-  ▸ MongoDB / Redis`,
-      experience: `╔══════════════════════════════════════════════╗
-║         PARCOURS PROFESSIONNEL               ║
-╚══════════════════════════════════════════════╝
+☁️ CLOUD & INFRASTRUCTURE
+  ▸ GCP (Google Cloud Platform) • AWS (Amazon)
+  ▸ Cloudflare (Workers, R2, CDN, DNS, Tunnels)
+  ▸ odoo.sh • Infrastructure as Code
+  ▸ Docker • Kubernetes • CI/CD
 
-[2023 - Présent] SICALAIT
-└─ Responsable Systèmes d'Information
-   Gestion infrastructure IT, projets DevOps
+🐍 BACKEND & FRAMEWORKS
+  ▸ Python : Flask, FastAPI, Django
+  ▸ Odoo : Développement & customisation
+  ▸ PHP : Symfony, Laravel
+  ▸ Node.js • API REST/GraphQL
 
-[2020 - 2023] SDPMA - Fermes & Jardins
-└─ Ingénieur DevOps
-   Automatisation, CI/CD, conteneurisation
+⚙️ DEVOPS & AUTOMATION
+  ▸ GitLab CI/CD • GitHub Actions
+  ▸ Ansible • Terraform
+  ▸ Monitoring : Prometheus, Grafana
+  ▸ Linux Administration expert
 
-[2007 - 2020] 6Kreation (12 ans)
-└─ Directeur & Développeur
-   Création société, dev WINDEV/WebDev
-   Conception meubles sur mesure`,
-      projects: `╔══════════════════════════════════════════════╗
-║          PROJETS & RÉALISATIONS              ║
-╚══════════════════════════════════════════════╝
+💻 FRONTEND & MOBILE
+  ▸ JavaScript/TypeScript • React
+  ▸ HTML5 • CSS3 • Tailwind
+  ▸ WinDev • WebDev • WinDev Mobile
 
-🔧 Infrastructure SICALAIT
-   Migration cloud, automatisation DevOps
-   Stack: Docker, K8s, GitLab CI
+🗄️ DATABASES & DATA
+  ▸ PostgreSQL • MySQL • MongoDB
+  ▸ Redis • Vector Databases
+  ▸ Data modeling & optimization
 
-🌐 Applications métier agricoles
-   ERP personnalisés, gestion coopérative
-   Stack: Python, PHP, PostgreSQL
+🎯 SOFT SKILLS
+  ▸ Management d'équipe IT
+  ▸ Architecture système & scalabilité
+  ▸ Résolution de problèmes complexes
+  ▸ Veille technologique permanente`,
+      experience: `╔═══════════════════════════════════════════════════════════╗
+║         🚀 PARCOURS PROFESSIONNEL                         ║
+╚═══════════════════════════════════════════════════════════╝
 
-📱 Applications mobiles
-   Solutions terrain pour techniciens
-   Stack: WinDev Mobile, API REST
+[2023 - Présent] SICALAIT - La Réunion
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ 💼 Responsable Systèmes d'Information
 
-💼 Projets disponible sur demande
-   Portfolio complet & références clients`,
-      contact: `╔══════════════════════════════════════════════╗
-║            CONTACT                           ║
-╚══════════════════════════════════════════════╝
+   🎯 Mission : "Garder le bateau à flot" pendant la transformation
+   
+   ✅ Modernisation complète de l'infrastructure IT
+   ✅ Migration cloud (GCP) & automatisation DevOps
+   ✅ Mise en place CI/CD & conteneurisation
+   ✅ Gestion équipe technique & prestataires
+   ✅ Architecture système & sécurité
+   
+   💡 Stack : GCP, Docker, K8s, Odoo, Python, Cloudflare
 
-📧 Email:    contact@raphaeldev.fr
-📱 Tél:      +262 693 39 58 98
-🔗 LinkedIn: linkedin.com/in/raphaelauberlet
-📍 Location: Le Tampon, La Réunion (974)
 
-💡 Disponible pour projets freelance
-   et missions longue durée
+[2020 - 2023] SDPMA - Fermes & Jardins - La Réunion
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ ⚙️ Ingénieur DevOps & Développeur
 
-> Tapez 'hire' pour un message spécial ;)`,
+   🎯 Mission : Stabiliser, automatiser, optimiser
+   
+   ✅ Transformation infrastructure (on-premise → cloud)
+   ✅ Automatisation complète des déploiements
+   ✅ Maintenance logiciels de caisse (conformité légale)
+   ✅ Développement apps mobiles d'inventaire
+   ✅ Formation équipes aux pratiques DevOps
+   
+   💡 Stack : AWS, GitLab CI, Docker, Python, WinDev Mobile
+
+
+[2007 - 2020] 6Kreation - Auto-entrepreneur (12 ans)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ 👔 Directeur & Développeur Full Stack
+
+   🎯 Création & gestion entreprise
+   
+   ✅ Développement applications de gestion (WINDEV/WebDev)
+   ✅ Conception meubles sur mesure (ébénisterie)
+   ✅ Gestion complète : commercial, technique, production
+   ✅ Reconversion progressive vers le dev & l'IT
+   
+   💡 Stack : WINDEV, WebDev Mobile, SQL, gestion projet
+
+
+📈 CHIFFRES CLÉS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • 15+ années d'expérience technique
+  • 5 ans à maintenir des infras critiques en production
+  • 2 transformations digitales majeures menées à bien
+  • ∞ problèmes résolus avec créativité et pragmatisme`,
+      projects: `╔═══════════════════════════════════════════════════════════╗
+║          ⚡ PROJETS & RÉALISATIONS MARQUANTES              ║
+╚═══════════════════════════════════════════════════════════╝
+
+🏭 TRANSFORMATION DIGITALE SICALAIT (2023-2025)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → Migration infrastructure vers GCP
+   → Automatisation complète des déploiements (GitLab CI/CD)
+   → Modernisation stack technique (conteneurisation)
+   → Zéro downtime pendant la transformation
+   
+   📊 Impact : +80% vélocité déploiements, -60% incidents
+   🛠️ Stack : GCP, Docker, Kubernetes, Odoo, Python
+
+
+💰 SYSTÈMES DE CAISSE & CONFORMITÉ (2020-2023)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → Maintenance logiciels de caisse (conformité légale)
+   → Mise aux normes fiscales et certifications
+   → Développement apps mobiles d'inventaire
+   → Synchronisation temps réel stocks/caisses
+   
+   📊 Impact : 100% conformité, 0 perte de données
+   🛠️ Stack : Python, WinDev Mobile, PostgreSQL, API REST
+
+
+🤖 AUTOMATISATIONS IA & WORKFLOWS (2024-2025)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → Intégration LLM en production (Ollama, GPT-4)
+   → Développement MCP servers pour workflows métier
+   → Automatisation n8n : veille, reporting, alertes
+   → RAG pour documentation technique interne
+   
+   📊 Impact : -70% temps tâches répétitives
+   🛠️ Stack : Ollama, n8n, MCP, Python, Vector DBs
+
+
+☁️ INFRASTRUCTURE MULTI-CLOUD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → Architecture haute disponibilité GCP + AWS
+   → CDN & sécurité Cloudflare (Workers, Tunnels)
+   → Monitoring & alerting temps réel
+   → Disaster recovery & backups automatisés
+   
+   📊 Impact : 99.9% uptime, sécurité renforcée
+   🛠️ Stack : GCP, AWS, Cloudflare, Terraform, Ansible
+
+
+💡 + DIZAINES DE PROJETS sur mesure
+   → Portfolio complet & références disponibles sur demande
+   → Code samples sur GitHub : github.com/ralphi2811`,
+      contact: `╔═══════════════════════════════════════════════════════════╗
+║            📬 CONTACT & LIENS                             ║
+╚═══════════════════════════════════════════════════════════╝
+
+📧 Email
+   → contact@raphaeldev.fr
+   → Réponse sous 24h garanti
+
+💼 GitHub
+   → github.com/ralphi2811
+   → Code samples & projets open-source
+
+🔗 LinkedIn
+   → linkedin.com/in/raphaelauberlet
+   → Réseau professionnel & recommandations
+
+� Téléphone
+   → +262 693 39 58 98
+   → WhatsApp / Signal disponibles
+
+�📍 Localisation
+   → Le Tampon, La Réunion (974)
+   → Remote-first • Déplacements France/Europe OK
+
+
+💡 DISPONIBILITÉ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ✅ Missions freelance / consulting
+   ✅ CDI • CDD • Contrats longue durée
+   ✅ Remote 100% ou hybride
+   ✅ Disponible immédiatement (préavis négociable)
+
+
+> Tapez 'hire' pour un message spécial recruteurs 😉`,
       hire: `
-██╗  ██╗██╗██████╗ ███████╗    ███╗   ███╗███████╗
-██║  ██║██║██╔══██╗██╔════╝    ████╗ ████║██╔════╝
-███████║██║██████╔╝█████╗      ██╔████╔██║█████╗  
-██╔══██║██║██╔══██╗██╔══╝      ██║╚██╔╝██║██╔══╝  
-██║  ██║██║██║  ██║███████╗    ██║ ╚═╝ ██║███████╗
-╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝
+██╗  ██╗██╗██████╗ ███████╗    ███╗   ███╗███████╗    ██╗
+██║  ██║██║██╔══██╗██╔════╝    ████╗ ████║██╔════╝    ██║
+███████║██║██████╔╝█████╗      ██╔████╔██║█████╗      ██║
+██╔══██║██║██╔══██╗██╔══╝      ██║╚██╔╝██║██╔══╝      ╚═╝
+██║  ██║██║██║  ██║███████╗    ██║ ╚═╝ ██║███████╗    ██╗
+╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
-Vous cherchez un dev qui comprend VRAIMENT le métier ?
+╔═══════════════════════════════════════════════════════════╗
+║  POURQUOI VOUS DEVRIEZ ME CONTACTER MAINTENANT :         ║
+╚═══════════════════════════════════════════════════════════╝
 
-✨ Je ne fais pas que coder, je résous des problèmes
-🚀 15 ans d'expérience du dev au management IT
-🎯 Autonome, créatif, et toujours à jour
-🌍 Remote-friendly, disponible immédiatement
+🎯 VOUS CHERCHEZ QUELQU'UN QUI...
+   ✅ Comprend VRAIMENT le business (pas juste la tech)
+   ✅ A gardé des systèmes critiques en prod pendant 5 ans
+   ✅ Sait coder ET manager (le rare combo)
+   ✅ Reste à jour sur l'IA, l'automation, le cloud moderne
+   ✅ Peut discuter avec le CEO comme avec les devs
 
-📩 contact@raphaeldev.fr
-Let's build something amazing together!`,
+💪 JE NE SUIS PAS...
+   ❌ Un dev qui attend qu'on lui dise quoi faire
+   ❌ Un manager qui a oublié comment on code
+   ❌ Quelqu'un qui a peur de mettre les mains dans le cambouis
+   ❌ Un profil "juste de passage" qui va partir dans 6 mois
+
+🚀 JE SUIS...
+   ✨ Un problem solver qui adore les défis techniques
+   ✨ Un touche-à-tout qui apprend vite (actuellement : MCP)
+   ✨ Passionné par l'excellence et l'innovation
+   ✨ Créatif (merci l'ébénisterie !)
+   ✨ Fiable (j'ai gardé le navire à flot pendant les tempêtes)
+
+💼 CE QUE JE PEUX FAIRE POUR VOUS :
+   → Architecturer & déployer votre infra cloud
+   → Moderniser votre legacy sans tout casser
+   → Automatiser ce qui doit l'être (IA inclus)
+   → Former et booster vos équipes techniques
+   → Gérer vos projets critiques de A à Z
+   → Ou juste résoudre ce problème que personne n'arrive à fix
+
+� POSTES VISÉS :
+   • Head of Engineering / CTO
+   • Lead DevOps / SRE / Platform Engineer
+   • Architecte Cloud / Solutions Architect
+   • Responsable / Directeur Systèmes d'Information
+   • Senior Full Stack avec leadership technique
+   • Ou on en discute ! (je suis ouvert)
+
+📩 ON DISCUTE ?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   contact@raphaeldev.fr
+   +262 693 39 58 98
+   linkedin.com/in/raphaelauberlet
+   
+   Café virtuel offert ☕ • Réponse rapide garantie ⚡
+
+P.S. : Si vous lisez ça, c'est que vous appréciez les profils
+       originaux. On est déjà sur la même longueur d'onde 🤝`,
       notFound: "Commande non reconnue. Tapez 'help' pour la liste des commandes."
     },
     en: {
       welcome: "Welcome to Raphael Auberlet's terminal",
       bootComplete: "System loaded. Type 'help' to start.",
       help: `Available commands:
-  about       - About me
-  skills      - Technical skills
-  experience  - Professional background
-  projects    - Projects & achievements
+  about       - Who am I?
+  skills      - Tech stack & expertise
+  xp          - Professional background
+  projects    - Key achievements
   contact     - Contact me
   lang en/fr  - Change language
-  matrix      - Matrix animation
-  hire        - Special message for recruiters
+  matrix      - Easter egg 🟢
+  hire        - 💼 Message for recruiters
   restart     - Restart terminal
-  clear       - Clear terminal
+  clear       - Clear screen
   help        - Display this help`,
-      about: `╔═══════════════════════════════════════════════╗
-║  RAPHAEL AUBERLET - Full Stack Developer    ║
-║  IT Systems Manager                         ║
-╚═══════════════════════════════════════════════╝
+      about: `╔═══════════════════════════════════════════════════════════╗
+║  RAPHAEL AUBERLET                                         ║
+║  IT Manager • DevOps Engineer • Problem Solver            ║
+╚═══════════════════════════════════════════════════════════╝
 
-🌴 Based in La Réunion Island (974)
-💼 15+ years of development experience
-🚀 Passionate about DevOps, Python, and new tech
+� MY MISSION: Keep the ship afloat AND modernize it
+   → Expert in digital transformation & automation
+   → From system architecture to production deployment
+   → Tech manager who still codes (and loves it!)
 
-From woodworking to code - an atypical journey!
-I transformed my passion for creation into technical
-expertise. Today, I design robust and elegant systems,
-just like I used to craft custom furniture.`,
-      skills: `╔══════════════════════════════════════╗
-║        TECH STACK                    ║
-╚══════════════════════════════════════╝
+� MY SUPERPOWER: I don't code, I solve your problems
+   → 15+ years turning ideas into robust systems
+   → Specialist in AI/LLM, automation, cloud & infrastructure
+   → From legacy to cutting-edge: seen it all, done it all
 
-Backend:
-  ▸ Python / Django / Symfony
-  ▸ PHP / Node.js
-  ▸ REST / SOAP APIs
+🌴 BASED IN REUNION ISLAND (974)
+   📍 Remote-first • Travel available • Flexible
 
-DevOps:
-  ▸ Docker / Kubernetes
-  ▸ CI/CD (GitLab, GitHub Actions)
-  ▸ Linux Administration
+🎨 ATYPICAL BACKGROUND: From woodworking to DevOps
+   → Same passion for excellence and creativity
+   → Successful career change, constant discovery
+   → Still learning every day (currently: MCP, Ollama)`,
+      skills: `╔═══════════════════════════════════════════════════════════╗
+║           💪 TECH STACK & EXPERTISE                       ║
+╚═══════════════════════════════════════════════════════════╝
 
-Frontend:
-  ▸ JavaScript / React
-  ▸ HTML5 / CSS3 / Tailwind
-  ▸ WebDev / WinDev Mobile
+🤖 AI & AUTOMATION (⭐ 2024-2025 Expertise)
+  ▸ LLM: Ollama, GPT-4, Claude, RAG
+  ▸ MCP: Development & professional integration
+  ▸ n8n: Advanced automation workflows
+  ▸ Python AI Stack: LangChain, vector DBs
 
-Databases:
-  ▸ PostgreSQL / MySQL
-  ▸ MongoDB / Redis`,
-      experience: `╔══════════════════════════════════════════════╗
-║         PROFESSIONAL BACKGROUND              ║
-╚══════════════════════════════════════════════╝
+☁️ CLOUD & INFRASTRUCTURE
+  ▸ GCP (Google Cloud Platform) • AWS (Amazon)
+  ▸ Cloudflare (Workers, R2, CDN, DNS, Tunnels)
+  ▸ odoo.sh • Infrastructure as Code
+  ▸ Docker • Kubernetes • CI/CD
 
-[2023 - Present] SICALAIT
-└─ IT Systems Manager
-   IT infrastructure, DevOps projects
+🐍 BACKEND & FRAMEWORKS
+  ▸ Python: Flask, FastAPI, Django
+  ▸ Odoo: Development & customization
+  ▸ PHP: Symfony, Laravel
+  ▸ Node.js • REST/GraphQL APIs
+
+⚙️ DEVOPS & AUTOMATION
+  ▸ GitLab CI/CD • GitHub Actions
+  ▸ Ansible • Terraform
+  ▸ Monitoring: Prometheus, Grafana
+  ▸ Expert Linux Administration
+
+💻 FRONTEND & MOBILE
+  ▸ JavaScript/TypeScript • React
+  ▸ HTML5 • CSS3 • Tailwind
+  ▸ WinDev • WebDev • WinDev Mobile
+
+🗄️ DATABASES & DATA
+  ▸ PostgreSQL • MySQL • MongoDB
+  ▸ Redis • Vector Databases
+  ▸ Data modeling & optimization
+
+🎯 SOFT SKILLS
+  ▸ IT team management
+  ▸ System architecture & scalability
+  ▸ Complex problem solving
+  ▸ Continuous tech watch`,
+      experience: `╔═══════════════════════════════════════════════════════════╗
+║         🚀 PROFESSIONAL BACKGROUND                        ║
+╚═══════════════════════════════════════════════════════════╝
+
+[2023 - Present] SICALAIT - Reunion Island
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ 💼 IT Systems Manager
+   🎯 Mission: "Keep the ship afloat" during transformation
+   ✅ Complete IT infrastructure modernization
+   ✅ Cloud migration (GCP) & DevOps automation
+   ✅ CI/CD implementation & containerization
+   💡 Stack: GCP, Docker, K8s, Odoo, Python, Cloudflare
 
 [2020 - 2023] SDPMA - Fermes & Jardins
-└─ DevOps Engineer
-   Automation, CI/CD, containerization
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ ⚙️ DevOps Engineer & Developer
+   🎯 Mission: Stabilize, automate, optimize
+   ✅ Infrastructure transformation (on-premise → cloud)
+   ✅ Complete deployment automation
+   ✅ POS software maintenance (legal compliance)
+   ✅ Mobile inventory apps development
+   💡 Stack: AWS, GitLab CI, Docker, Python, WinDev Mobile
 
-[2007 - 2020] 6Kreation (12 years)
-└─ Director & Developer
-   Company creation, WINDEV/WebDev dev
-   Custom furniture design`,
-      projects: `╔══════════════════════════════════════════════╗
-║          PROJECTS & ACHIEVEMENTS             ║
-╚══════════════════════════════════════════════╝
+[2007 - 2020] 6Kreation - Self-employed (12 years)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ 👔 Director & Full Stack Developer
+   ✅ Management apps development (WINDEV/WebDev)
+   ✅ Custom furniture design (woodworking)
+   ✅ Complete business management
+   💡 Stack: WINDEV, WebDev Mobile, SQL
 
-🔧 SICALAIT Infrastructure
-   Cloud migration, DevOps automation
-   Stack: Docker, K8s, GitLab CI
+📈 KEY FIGURES: 15+ years • 5 years critical infra • ∞ problems solved`,
+      projects: `╔═══════════════════════════════════════════════════════════╗
+║          ⚡ KEY ACHIEVEMENTS                               ║
+╚═══════════════════════════════════════════════════════════╝
 
-🌐 Agricultural business applications
-   Custom ERP, cooperative management
-   Stack: Python, PHP, PostgreSQL
+🏭 SICALAIT DIGITAL TRANSFORMATION (2023-2025)
+   → Infrastructure migration to GCP
+   → Complete deployment automation (GitLab CI/CD)
+   → Zero downtime during transformation
+   📊 Impact: +80% deploy velocity, -60% incidents
+   🛠️ Stack: GCP, Docker, Kubernetes, Odoo, Python
 
-📱 Mobile applications
-   Field solutions for technicians
-   Stack: WinDev Mobile, REST API
+� POS SYSTEMS & COMPLIANCE (2020-2023)
+   → POS software maintenance (legal compliance)
+   → Tax regulations & certifications  
+   → Mobile inventory apps development
+   → Real-time stock/POS synchronization
+   📊 Impact: 100% compliance, 0 data loss
+   🛠️ Stack: Python, WinDev Mobile, PostgreSQL, REST API
 
-💼 Full portfolio available on request
-   Complete portfolio & client references`,
-      contact: `╔══════════════════════════════════════════════╗
-║            CONTACT                           ║
-╚══════════════════════════════════════════════╝
+🤖 AI AUTOMATION & WORKFLOWS (2024-2025)
+   → LLM integration in production (Ollama, GPT-4)
+   → MCP servers development for business workflows
+   📊 Impact: -70% time on repetitive tasks
+   🛠️ Stack: Ollama, n8n, MCP, Python, Vector DBs
 
-📧 Email:    contact@raphaeldev.fr
-📱 Phone:    +262 693 39 58 98
-🔗 LinkedIn: linkedin.com/in/raphaelauberlet
-📍 Location: Le Tampon, Reunion Island (974)
+☁️ MULTI-CLOUD INFRASTRUCTURE
+   → High availability architecture GCP + AWS
+   → CDN & security with Cloudflare
+   📊 Impact: 99.9% uptime, enhanced security
+   🛠️ Stack: GCP, AWS, Cloudflare, Terraform, Ansible
 
-💡 Available for freelance projects
-   and long-term missions
+💡 + DOZENS of custom projects
+   → Full portfolio & references available
+   → Code samples: github.com/ralphi2811`,
+      contact: `╔═══════════════════════════════════════════════════════════╗
+║            📬 CONTACT & LINKS                             ║
+╚═══════════════════════════════════════════════════════════╝
 
-> Type 'hire' for a special message ;)`,
+📧 Email → contact@raphaeldev.fr (24h response guaranteed)
+💼 GitHub → github.com/ralphi2811
+🔗 LinkedIn → linkedin.com/in/raphaelauberlet
+� Phone → +262 693 39 58 98
+�📍 Location → Le Tampon, Reunion Island (974)
+   Remote-first • Travel France/Europe OK
+
+💡 AVAILABILITY
+   ✅ Freelance/consulting missions
+   ✅ Full-time contracts • Long-term projects
+   ✅ 100% remote or hybrid
+   ✅ Available immediately (negotiable notice period)
+
+> Type 'hire' for a special recruiter message 😉`,
       hire: `
-██╗  ██╗██╗██████╗ ███████╗    ███╗   ███╗███████╗
-██║  ██║██║██╔══██╗██╔════╝    ████╗ ████║██╔════╝
-███████║██║██████╔╝█████╗      ██╔████╔██║█████╗  
-██╔══██║██║██╔══██╗██╔══╝      ██║╚██╔╝██║██╔══╝  
-██║  ██║██║██║  ██║███████╗    ██║ ╚═╝ ██║███████╗
-╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝
+██╗  ██╗██╗██████╗ ███████╗    ███╗   ███╗███████╗    ██╗
+██║  ██║██║██╔══██╗██╔════╝    ████╗ ████║██╔════╝    ██║
+███████║██║██████╔╝█████╗      ██╔████╔██║█████╗      ██║
+██╔══██║██║██╔══██╗██╔══╝      ██║╚██╔╝██║██╔══╝      ╚═╝
+██║  ██║██║██║  ██║███████╗    ██║ ╚═╝ ██║███████╗    ██╗
+╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
-Looking for a dev who REALLY understands the business?
+╔═══════════════════════════════════════════════════════════╗
+║  WHY YOU SHOULD CONTACT ME NOW:                          ║
+╚═══════════════════════════════════════════════════════════╝
 
-✨ I don't just code, I solve problems
-🚀 15 years from dev to IT management
-🎯 Autonomous, creative, always up-to-date
-🌍 Remote-friendly, available immediately
+🎯 YOU'RE LOOKING FOR SOMEONE WHO...
+   ✅ REALLY understands business (not just tech)
+   ✅ Kept critical systems in prod for 5 years
+   ✅ Can code AND manage (the rare combo)
+   ✅ Stays current on AI, automation, modern cloud
+   ✅ Can talk to CEOs and devs alike
 
-📩 contact@raphaeldev.fr
-Let's build something amazing together!`,
+🚀 I AM...
+   ✨ A problem solver who loves technical challenges
+   ✨ A jack-of-all-trades who learns fast (currently: MCP)
+   ✨ Passionate about excellence and innovation
+   ✨ Creative (thanks woodworking!)
+   ✨ Reliable (kept the ship afloat through storms)
+
+💼 WHAT I CAN DO FOR YOU:
+   → Architect & deploy your cloud infrastructure
+   → Modernize your legacy without breaking everything
+   → Automate what needs to be (AI included)
+   → Train and boost your technical teams
+   → Manage your critical projects end-to-end
+   → Or just fix that problem nobody can solve
+
+� TARGET POSITIONS:
+   • Head of Engineering / CTO
+   • Lead DevOps / SRE / Platform Engineer
+   • Cloud / Solutions Architect
+   • IT Director / Systems Manager
+   • Senior Full Stack with technical leadership
+   • Or let's discuss! (I'm open)
+
+📩 LET'S TALK?
+   contact@raphaeldev.fr • +262 693 39 58 98
+   linkedin.com/in/raphaelauberlet
+   Virtual coffee offered ☕ • Fast response guaranteed ⚡
+
+P.S.: If you're reading this, you appreciate original profiles.
+      We're already on the same wavelength 🤝`,
       notFound: "Command not recognized. Type 'help' for command list."
     }
   };
@@ -339,19 +601,20 @@ Let's build something amazing together!`,
   const t = translations[lang];
 
   const bootSequence = [
-    "BIOS v2.4.1 - Raphael Auberlet Terminal OS",
-    "Initializing system...",
-    "Loading kernel modules... [OK]",
-    "Mounting file systems... [OK]",
-    "Starting network services... [OK]",
-    "Loading developer profile... [OK]",
-    "Initializing coffee.service... [OK]",
+    "RAPHAELDEV TERMINAL OS - ULTRA EDITION",
+    "Detecting hardware...",
+    "├─ CPU: Brain v2.0 [Overclocked] ✓",
+    "├─ RAM: Coffee 64GB DDR5 ✓",
+    "├─ GPU: Creativity RTX 4090 ✓",
+    "└─ SSD: Experience 15TB NVMe ✓",
     "",
-    { type: 'logo', component: true },
+    "Loading game assets...",
+    "▸ Level: Senior Developer [UNLOCKED]",
+    "▸ XP: 15+ years [MAX]",
+    "▸ Skills tree: COMPLETED",
+    "▸ Achievement unlocked: 'Full Stack Master'",
     "",
-    t.welcome,
-    t.bootComplete,
-    ""
+    { type: 'loading' } // Marqueur spécial pour l'animation de loading
   ];
 
   useEffect(() => {
@@ -363,16 +626,32 @@ Let's build something amazing together!`,
       let timeoutId = null;
       let cancelled = false;
       
+      // Afficher un curseur pendant l'attente initiale
+      setOutput([{ type: 'system', text: '▊' }]);
+      setTypingLineIndex(0);
+      
       const bootType = () => {
         if (cancelled) return;
         
-        if (index >= bootSequence.length) {
-          setIsBooting(false);
+        // Effacer le curseur initial au début du boot
+        if (index === 0 && currentCharIndex === 0) {
+          setOutput([]);
           setTypingLineIndex(-1);
+        }
+        
+        if (index >= bootSequence.length) {
+          // Fin de la séquence de boot - lancer l'animation de loading
+          startLoadingAnimation();
           return;
         }
         
         const item = bootSequence[index];
+        
+        // Si c'est le marqueur de loading
+        if (typeof item === 'object' && item.type === 'loading') {
+          startLoadingAnimation();
+          return;
+        }
         
         // Si c'est le logo, l'afficher directement
         if (typeof item === 'object' && item.component) {
@@ -426,11 +705,55 @@ Let's build something amazing together!`,
           currentText = '';
           currentOutputIndex++;
           
-          timeoutId = setTimeout(bootType, 100); // Pause de 100ms entre les lignes
+          timeoutId = setTimeout(bootType, 250); // Pause de 250ms entre les lignes (augmenté de 100ms à 250ms)
         }
       };
       
-      bootType();
+      const startLoadingAnimation = () => {
+        setOutput(prev => [...prev, { type: 'system', text: '' }]);
+        setOutput(prev => [...prev, { type: 'system', text: 'Initializing terminal interface...' }]);
+        
+        let progress = 0;
+        const totalSteps = 20;
+        const intervalTime = 200; // 4 secondes / 20 étapes = 200ms
+        
+        const loadingInterval = setInterval(() => {
+          progress++;
+          const filled = '▓'.repeat(progress);
+          const empty = '░'.repeat(totalSteps - progress);
+          const percentage = Math.round((progress / totalSteps) * 100);
+          
+          setOutput(prev => {
+            const newOutput = [...prev];
+            // Mettre à jour la dernière ligne avec la barre de progression
+            newOutput[newOutput.length - 1] = {
+              type: 'system',
+              text: `Loading... [${filled}${empty}] ${percentage}%`
+            };
+            return newOutput;
+          });
+          
+          if (progress >= totalSteps) {
+            clearInterval(loadingInterval);
+            
+            // Attendre un peu puis clear et afficher le logo + messages
+            setTimeout(() => {
+              setOutput([
+                { type: 'logo' },
+                { type: 'system', text: '' },
+                { type: 'system', text: t.welcome },
+                { type: 'system', text: t.bootComplete },
+                { type: 'system', text: '' }
+              ]);
+              setIsBooting(false);
+              setTypingLineIndex(-1);
+            }, 300);
+          }
+        }, intervalTime);
+      };
+      
+      // Délai d'une seconde avant de commencer le boot
+      timeoutId = setTimeout(bootType, 1000);
       
       // Cleanup
       return () => {
@@ -547,7 +870,7 @@ Let's build something amazing together!`,
       return;
     }
 
-    if (trimmedCmd === 'experience') {
+    if (trimmedCmd === 'xp' || trimmedCmd === 'experience') {
       typeText(t.experience);
       return;
     }
