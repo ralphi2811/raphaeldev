@@ -331,7 +331,7 @@ Commandes disponibles:
    ✅ Missions freelance / consulting
    ✅ CDI • CDD • Contrats longue durée
    ✅ Remote 100% ou hybride
-   ✅ Disponible immédiatement (préavis négociable)
+   
 
 
 > Tapez 'hire' pour un message spécial recruteurs 😉`,
@@ -590,7 +590,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
    ✅ Freelance/consulting missions
    ✅ Full-time contracts • Long-term projects
    ✅ 100% remote or hybrid
-   ✅ Available immediately (negotiable notice period)
+   
 
 > Type 'hire' for a special recruiter message 😉`,
       hire: `
