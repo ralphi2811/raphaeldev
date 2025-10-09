@@ -9,6 +9,30 @@ const TerminalPortfolio = () => {
     return browserLang.toLowerCase().startsWith('fr') ? 'fr' : 'en';
   };
 
+  // Géolocalisation - Redirection si La Réunion
+  useEffect(() => {
+    const checkGeolocation = async () => {
+      try {
+        // Utiliser une API de géolocalisation gratuite
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        
+        // Vérifier si l'utilisateur est à La Réunion (code pays RE ou région FR-RE)
+        if (data.country_code === 'RE' || 
+            data.region_code === 'RE' || 
+            (data.country_code === 'FR' && data.region === 'Reunion')) {
+          // Redirection vers LinkedIn
+          window.location.href = 'https://linkedin.com/in/raphaelauberlet';
+        }
+      } catch (error) {
+        // En cas d'erreur de l'API, on laisse le site s'afficher normalement
+        console.log('Geolocation check failed, continuing normally');
+      }
+    };
+    
+    checkGeolocation();
+  }, []);
+
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([]);
   const [history, setHistory] = useState([]);
