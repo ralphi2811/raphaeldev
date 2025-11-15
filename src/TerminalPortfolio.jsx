@@ -1009,11 +1009,26 @@ P.S.: If you're reading this, you appreciate original profiles.
     typingIntervalRef.current = typeInterval;
   };
 
+  // Fonction pour envoyer des événements à Google Tag Manager
+  const trackCommand = (command, category = 'terminal_command') => {
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'terminal_interaction',
+        command_name: command,
+        command_category: category,
+        language: lang
+      });
+    }
+  };
+
   const executeCommand = (cmd) => {
     const trimmedCmd = cmd.trim().toLowerCase();
     setOutput(prev => [...prev, { type: 'input', text: `> ${cmd}` }]);
 
     if (trimmedCmd === '') return;
+    
+    // Tracker la commande
+    trackCommand(trimmedCmd);
 
     setHistory(prev => [...prev, cmd]);
     setHistoryIndex(-1);
@@ -1027,6 +1042,7 @@ P.S.: If you're reading this, you appreciate original profiles.
 
     if (trimmedCmd === 'clear') {
       setOutput([]);
+      trackCommand('clear', 'system');
       return;
     }
 
@@ -1150,6 +1166,7 @@ P.S.: If you're reading this, you appreciate original profiles.
 
     // Easter egg: hacker mode
     if (trimmedCmd === 'hack' || trimmedCmd === 'hacker') {
+      trackCommand(trimmedCmd, 'easter_egg');
       const hackerText = lang === 'fr' 
         ? `🔓 INITIALISATION DU MODE HACKER...
     
@@ -1183,6 +1200,7 @@ PS: Type 'hire' to use this power for good 😎`;
 
     // Easter egg: coffee
     if (trimmedCmd === 'coffee' || trimmedCmd === 'café') {
+      trackCommand(trimmedCmd, 'easter_egg');
       const coffeeArt = `                          
                                                                                                 
                                     ████████████████████████                                    
@@ -1229,6 +1247,7 @@ ${lang === 'fr' ? '💡 Conseil : Essayez aussi "beer" pour l\'after-work 🍺' 
 
     // Easter egg: beer
     if (trimmedCmd === 'beer' || trimmedCmd === 'bière') {
+      trackCommand(trimmedCmd, 'easter_egg');
       const beerArt = `
                            ╔══════════════════════════╗
                            ║   🍺 BEER O'CLOCK 🍺     ║
@@ -1292,6 +1311,7 @@ ${lang === 'fr' ? '⚠️  À consommer avec modération (contrairement aux lign
 
     // Easter egg: konami code easter egg
     if (trimmedCmd === 'konami' || trimmedCmd === '↑↑↓↓←→←→ba') {
+      trackCommand('konami', 'easter_egg');
       const konamiText = lang === 'fr'
         ? `🎮 CODE KONAMI ACTIVÉ !
     
@@ -1442,6 +1462,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 
     // Easter egg SECRET (non documenté - le challenge !)
     if (trimmedCmd === 'godmode' || trimmedCmd === 'god mode') {
+      trackCommand('godmode', 'easter_egg_secret');
       const godmodeText = lang === 'fr'
         ? `
 🏆 ACHIEVEMENT UNLOCKED: "The Curious One"
@@ -1517,6 +1538,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
         trimmedCmd === '🐱🌀' ||
         trimmedCmd === 'cat spin' ||
         trimmedCmd === 'spincat') {
+      trackCommand('oiia_warning', 'easter_egg_ultimate');
       
       const warningSequence = lang === 'fr' ? [
         '⚠️  ALERTE SYSTÈME ⚠️',
@@ -1558,6 +1580,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 
     // Confirmation OIIA - Niveau 2
     if (trimmedCmd === 'oiia confirm') {
+      trackCommand('oiia_confirm', 'easter_egg_ultimate');
       const secondWarning = lang === 'fr' ? [
         '',
         '🤔 Sérieusement ?',
@@ -1603,6 +1626,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 
     // Lancement FINAL
     if (trimmedCmd === 'oiia launch' || trimmedCmd === 'oiia yes' || trimmedCmd === 'oiia go') {
+      trackCommand('oiia_launch', 'easter_egg_ultimate');
       const finalCountdown = lang === 'fr' ? [
         '',
         '🎯 Bon... Vous l\'aurez voulu.',
