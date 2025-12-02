@@ -128,8 +128,8 @@ const TerminalPortfolio = () => {
 
   const translations = {
     fr: {
-      welcome: ">> Raphaël Auberlet • Responsable SI & DevOps Engineer",
-      bootComplete: "Disponible pour votre prochain défi technique • Tapez 'help' pour commencer",
+      welcome: ">> Raphaël Auberlet • DevOps Engineer & Expert Cloud",
+      bootComplete: "🚀 DISPONIBLE IMMÉDIATEMENT • Nouveau chapitre, nouvelles opportunités • Tapez 'help' pour commencer",
       help: `
 Commandes disponibles:
   about       - Qui suis-je ?
@@ -147,21 +147,27 @@ Commandes disponibles:
       about: `
 ╔═══════════════════════════════════════════════════════════╗
 ║  RAPHAEL AUBERLET                                         ║
-║  Responsable SI • DevOps Engineer • Problem Solver        ║
+║  DevOps Engineer • Expert Cloud • Problem Solver          ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🪖 MA MISSION : Garder le navire à flot ET le moderniser
-   → Expert en transformation digitale et automatisation
-   → De l'architecture système au déploiement en production
-   → Manager technique qui code encore (et qui adore ça !)
+🚀 NOUVEAU CHAPITRE - DISPONIBLE IMMÉDIATEMENT
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Après 2 ans en tant que RSI, je suis prêt pour
+   de nouveaux défis ! 100% disponible dès maintenant.
 
 💡 MON SUPER-POUVOIR : Je ne code pas, je résous vos problèmes
    → 15+ ans à transformer des idées en systèmes robustes
    → Spécialiste IA/LLM, automation, cloud & infrastructure
    → Du legacy au cutting-edge : j'ai tout vu, tout fait
 
+🎯 CE QUE J'APPORTE :
+   → Expert en transformation digitale et automatisation
+   → De l'architecture système au déploiement en production
+   → Leadership technique avec les mains dans le code
+
 🌴 BASÉ À LA RÉUNION (974)
    📍 Remote-first • Déplacements possibles • Flexible
+   🌍 Ouvert à la mobilité France/International
 
 🎨 MON PARCOURS ATYPIQUE : De l'ébénisterie au DevOps
    → Même passion pour l'excellence et la créativité
@@ -216,11 +222,14 @@ Commandes disponibles:
 ║               🚀 PARCOURS PROFESSIONNEL                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
-[2023 - Présent] SICALAIT - La Réunion
+🔥 DISPONIBLE IMMÉDIATEMENT - Décembre 2025
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[2023 - Nov 2025] SICALAIT - La Réunion
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 └─ 💼 Responsable Systèmes d'Information
 
-   🎯 Mission : "Garder le bateau à flot" pendant la transformation
+   🎯 Mission accomplie : Transformation digitale réussie !
    
    ✅ Modernisation complète de l'infrastructure IT
    ✅ Migration cloud (GCP) & automatisation DevOps
@@ -271,7 +280,7 @@ Commandes disponibles:
 ║          ⚡ PROJETS & RÉALISATIONS MARQUANTES              ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🏭 TRANSFORMATION DIGITALE SICALAIT (2023-2025)
+🏭 TRANSFORMATION DIGITALE SICALAIT (2023-Nov 2025)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    → Migration infrastructure vers GCP
    → Automatisation complète des déploiements (GitLab CI/CD)
@@ -346,10 +355,11 @@ Commandes disponibles:
 
 💡 DISPONIBILITÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ✅ Missions freelance / consulting
+   🔥 DISPONIBLE IMMÉDIATEMENT - Décembre 2025
    ✅ CDI • CDD • Contrats longue durée
+   ✅ Missions freelance / consulting
    ✅ Remote 100% ou hybride
-   
+   ✅ Mobilité France/International possible
 
 
 > Tapez 'hire' pour un message spécial recruteurs 😉`,
@@ -362,8 +372,12 @@ Commandes disponibles:
 ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
 ╔═══════════════════════════════════════════════════════════╗
-║     POURQUOI VOUS DEVRIEZ ME CONTACTER MAINTENANT :       ║
+║  🔥 DISPONIBLE IMMÉDIATEMENT - DÉCEMBRE 2025 🔥           ║
 ╚═══════════════════════════════════════════════════════════╝
+
+⚡ NOUVEAU CHAPITRE PROFESSIONNEL
+   Après 2 ans comme RSI, je suis prêt pour de nouvelles
+   aventures ! Disponible immédiatement, motivé à 200%.
 
 🎯 VOUS CHERCHEZ QUELQU'UN QUI...
    ✅ Comprend VRAIMENT le business (pas juste la tech)
@@ -371,12 +385,12 @@ Commandes disponibles:
    ✅ Sait coder ET manager (le rare combo)
    ✅ Reste à jour sur l'IA, l'automation, le cloud moderne
    ✅ Peut discuter avec le CEO comme avec les devs
+   ✅ Est DISPONIBLE MAINTENANT (pas dans 3 mois !)
 
 💪 JE NE SUIS PAS...
    ❌ Un dev qui attend qu'on lui dise quoi faire
    ❌ Un manager qui a oublié comment on code
    ❌ Quelqu'un qui a peur de mettre les mains dans le cambouis
-   ❌ Un profil "juste de passage" qui va partir dans 6 mois
 
 🚀 JE SUIS...
    ✨ Un problem solver qui adore les défis techniques
@@ -442,8 +456,8 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
       notFound: "Commande non reconnue. Tapez 'help' pour la liste des commandes."
     },
     en: {
-      welcome: ">> Raphaël Auberlet • IT Manager & DevOps Engineer",
-      bootComplete: "Available for your next technical challenge • Type 'help' to start",
+      welcome: ">> Raphaël Auberlet • DevOps Engineer & Cloud Expert",
+      bootComplete: "🚀 AVAILABLE IMMEDIATELY • New chapter, new opportunities • Type 'help' to start",
       help: `Available commands:
   about       - Who am I?
   skills      - Tech stack & expertise
@@ -460,21 +474,27 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
       about: `
 ╔═══════════════════════════════════════════════════════════╗
 ║  RAPHAEL AUBERLET                                         ║
-║  IT Manager • DevOps Engineer • Problem Solver            ║
+║  DevOps Engineer • Cloud Expert • Problem Solver          ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🪖 MY MISSION: Keep the ship afloat AND modernize it
-   → Expert in digital transformation & automation
-   → From system architecture to production deployment
-   → Tech manager who still codes (and loves it!)
+🚀 NEW CHAPTER - AVAILABLE IMMEDIATELY
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   After 2 years as IT Manager, I'm ready for
+   new challenges! 100% available right now.
 
 💡 MY SUPERPOWER: I don't code, I solve your problems
    → 15+ years turning ideas into robust systems
    → Specialist in AI/LLM, automation, cloud & infrastructure
    → From legacy to cutting-edge: seen it all, done it all
 
+🎯 WHAT I BRING:
+   → Expert in digital transformation & automation
+   → From system architecture to production deployment
+   → Technical leadership with hands-on coding
+
 🌴 BASED IN REUNION ISLAND (974)
    📍 Remote-first • Travel available • Flexible
+   🌍 Open to relocation France/International
 
 🎨 ATYPICAL BACKGROUND: From woodworking to DevOps
    → Same passion for excellence and creativity
@@ -529,10 +549,13 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 ║              🚀 PROFESSIONAL BACKGROUND                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
-[2023 - Present] SICALAIT - Reunion Island
+🔥 AVAILABLE IMMEDIATELY - December 2025
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[2023 - Nov 2025] SICALAIT - Reunion Island
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 └─ 💼 IT Systems Manager
-   🎯 Mission: "Keep the ship afloat" during transformation
+   🎯 Mission accomplished: Successful digital transformation!
    ✅ Complete IT infrastructure modernization
    ✅ Cloud migration (GCP) & DevOps automation
    ✅ CI/CD implementation & containerization
@@ -562,7 +585,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 ║                   ⚡ KEY ACHIEVEMENTS                      ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🏭 SICALAIT DIGITAL TRANSFORMATION (2023-2025)
+🏭 SICALAIT DIGITAL TRANSFORMATION (2023-Nov 2025)
    → Infrastructure migration to GCP
    → Complete deployment automation (GitLab CI/CD)
    → Zero downtime during transformation
@@ -605,10 +628,12 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 💻 Remote-first • Travel France/Europe OK
 
 💡 AVAILABILITY
-   ✅ Freelance/consulting missions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   🔥 AVAILABLE IMMEDIATELY - December 2025
    ✅ Full-time contracts • Long-term projects
+   ✅ Freelance/consulting missions
    ✅ 100% remote or hybrid
-   
+   ✅ Relocation France/International possible
 
 > Type 'hire' for a special recruiter message 😉`,
       hire: `
@@ -620,8 +645,12 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
 ╔═══════════════════════════════════════════════════════════╗
-║   WHY YOU SHOULD CONTACT ME NOW:                          ║
+║  🔥 AVAILABLE IMMEDIATELY - DECEMBER 2025 🔥             ║
 ╚═══════════════════════════════════════════════════════════╝
+
+⚡ NEW PROFESSIONAL CHAPTER
+   After 2 years as IT Manager, I'm ready for new
+   adventures! Available immediately, 200% motivated.
 
 🎯 YOU'RE LOOKING FOR SOMEONE WHO...
    ✅ REALLY understands business (not just tech)
@@ -629,6 +658,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
    ✅ Can code AND manage (the rare combo)
    ✅ Stays current on AI, automation, modern cloud
    ✅ Can talk to CEOs and devs alike
+   ✅ Is AVAILABLE NOW (not in 3 months!)
 
 🚀 I AM...
    ✨ A problem solver who loves technical challenges
