@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Terminal, Code, Briefcase, Mail, Globe, Zap } from 'lucide-react';
 
 const TerminalPortfolio = () => {
@@ -95,6 +95,42 @@ const TerminalPortfolio = () => {
   };
 
   const [activeEvent] = useState(getActiveEvent());
+
+  // ❄️ Composant Snowfall optimisé (mémorisé pour éviter les re-renders)
+  const Snowfall = useMemo(() => {
+    if (!activeEvent || activeEvent.effect !== 'snow') return null;
+    
+    // Pré-calculer les flocons une seule fois
+    const snowflakes = Array.from({ length: 30 }, (_, i) => ({
+      id: i,
+      left: `${(i * 3.33) + Math.random() * 2}%`,
+      delay: `${(i * 0.3) % 8}s`,
+      duration: `${8 + (i % 5) * 2}s`,
+      opacity: 0.4 + (i % 4) * 0.15,
+      size: `${10 + (i % 4) * 3}px`,
+      symbol: ['❄', '❅', '❆', '✼', '❉'][i % 5]
+    }));
+
+    return (
+      <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
+        {snowflakes.map((flake) => (
+          <div
+            key={flake.id}
+            className="snowflake"
+            style={{
+              left: flake.left,
+              animationDelay: flake.delay,
+              animationDuration: flake.duration,
+              opacity: flake.opacity,
+              fontSize: flake.size
+            }}
+          >
+            {flake.symbol}
+          </div>
+        ))}
+      </div>
+    );
+  }, [activeEvent]);
 
   // Composant pour le logo avec effet wave
   const AsciiLogo = () => {
@@ -1771,26 +1807,8 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
         </div>
       )}
 
-      {/* 🎄 Effets saisonniers */}
-      {activeEvent?.effect === 'snow' && (
-        <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
-          {[...Array(50)].map((_, i) => (
-            <div
-              key={i}
-              className="snowflake"
-              style={{
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${5 + Math.random() * 10}s`,
-                opacity: 0.3 + Math.random() * 0.7,
-                fontSize: `${8 + Math.random() * 12}px`
-              }}
-            >
-              {['❄', '❅', '❆', '✻', '✼', '❉'][Math.floor(Math.random() * 6)]}
-            </div>
-          ))}
-        </div>
-      )}
+      {/* 🎄 Effets saisonniers (mémorisés) */}
+      {Snowfall}
 
       {/* Background ASCII art */}
       <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
