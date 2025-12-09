@@ -40,6 +40,62 @@ const TerminalPortfolio = () => {
   const outputRef = useRef(null);
   const typingIntervalRef = useRef(null);
 
+  // ═══════════════════════════════════════════════════════════════════════════
+  // 🎉 SYSTÈME D'ÉVÉNEMENTS SAISONNIERS
+  // Pour ajouter un événement : ajouter une entrée dans seasonalEvents
+  // avec les conditions (mois, jour, etc.) et les propriétés visuelles
+  // ═══════════════════════════════════════════════════════════════════════════
+  const seasonalEvents = [
+    {
+      id: 'christmas',
+      name: 'Noël',
+      // Condition : du 1er au 31 décembre
+      isActive: () => {
+        const now = new Date();
+        return now.getMonth() === 11; // Décembre (0-indexed)
+      },
+      // Effet visuel : neige qui tombe
+      effect: 'snow',
+      // Émojis décoratifs pour le header
+      headerEmoji: '🎄',
+      // Message spécial (optionnel)
+      message: { fr: 'Joyeuses fêtes ! 🎅', en: 'Happy Holidays! 🎅' }
+    },
+    // ──────────────────────────────────────────────────────────────────────────
+    // AJOUTER D'AUTRES ÉVÉNEMENTS ICI :
+    // ──────────────────────────────────────────────────────────────────────────
+    // {
+    //   id: 'halloween',
+    //   name: 'Halloween',
+    //   isActive: () => {
+    //     const now = new Date();
+    //     return now.getMonth() === 9 && now.getDate() >= 25; // 25-31 Octobre
+    //   },
+    //   effect: 'bats', // ou 'pumpkins', etc.
+    //   headerEmoji: '🎃',
+    //   message: { fr: 'Boo ! 👻', en: 'Boo! 👻' }
+    // },
+    // {
+    //   id: 'valentine',
+    //   name: 'Saint-Valentin',
+    //   isActive: () => {
+    //     const now = new Date();
+    //     return now.getMonth() === 1 && now.getDate() >= 10 && now.getDate() <= 14;
+    //   },
+    //   effect: 'hearts',
+    //   headerEmoji: '💕',
+    //   message: { fr: 'Joyeuse Saint-Valentin !', en: 'Happy Valentine\'s Day!' }
+    // },
+    // ──────────────────────────────────────────────────────────────────────────
+  ];
+
+  // Déterminer l'événement actif
+  const getActiveEvent = () => {
+    return seasonalEvents.find(event => event.isActive()) || null;
+  };
+
+  const [activeEvent] = useState(getActiveEvent());
+
   // Composant pour le logo avec effet wave
   const AsciiLogo = () => {
     const [wavePhase, setWavePhase] = useState(0);
@@ -1715,6 +1771,27 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
         </div>
       )}
 
+      {/* 🎄 Effets saisonniers */}
+      {activeEvent?.effect === 'snow' && (
+        <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={i}
+              className="snowflake"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${5 + Math.random() * 10}s`,
+                opacity: 0.3 + Math.random() * 0.7,
+                fontSize: `${8 + Math.random() * 12}px`
+              }}
+            >
+              {['❄', '❅', '❆', '✻', '✼', '❉'][Math.floor(Math.random() * 6)]}
+            </div>
+          ))}
+        </div>
+      )}
+
       {/* Background ASCII art */}
       <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
         <pre className="text-xs animate-pulse">
@@ -1736,7 +1813,11 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
       <div className="mb-4 border-b border-green-800 pb-4 flex-shrink-0">
         <div className="flex items-center gap-2 mb-2">
           <Terminal className="w-6 h-6" />
-          <h1 className="text-xl font-bold">RAPHAELDEV.FR</h1>
+          <h1 className="text-xl font-bold">
+            {activeEvent?.headerEmoji && <span className="mr-2">{activeEvent.headerEmoji}</span>}
+            RAPHAELDEV.FR
+            {activeEvent?.headerEmoji && <span className="ml-2">{activeEvent.headerEmoji}</span>}
+          </h1>
           <button
             onClick={() => setLang(lang === 'fr' ? 'en' : 'fr')}
             className="ml-auto px-3 py-1 border border-green-600 hover:bg-green-900/30 transition-colors rounded"
@@ -1746,6 +1827,9 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
           </button>
         </div>
         <div className="text-xs opacity-70">
+          {activeEvent?.message ? (
+            <span className="text-yellow-300">{activeEvent.message[lang]} • </span>
+          ) : null}
           Type 'help' for available commands | Press ↑↓ for history
         </div>
       </div>
@@ -1824,6 +1908,73 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
           }
           100% {
             top: 100%;
+          }
+        }
+
+        /* ❄️ Animation neige */
+        .snowflake {
+          position: absolute;
+          top: -20px;
+          color: #fff;
+          animation: snowfall linear infinite;
+          text-shadow: 0 0 5px #fff, 0 0 10px #b0e0e6;
+        }
+        
+        @keyframes snowfall {
+          0% {
+            top: -5%;
+            transform: translateX(0) rotate(0deg);
+          }
+          100% {
+            top: 105%;
+            transform: translateX(100px) rotate(360deg);
+          }
+        }
+
+        /* 🎃 Animation chauves-souris (pour Halloween) */
+        .bat {
+          position: absolute;
+          top: -20px;
+          animation: bat-fly linear infinite;
+        }
+        
+        @keyframes bat-fly {
+          0% {
+            top: -5%;
+            transform: translateX(0) scaleX(1);
+          }
+          25% {
+            transform: translateX(50px) scaleX(-1);
+          }
+          50% {
+            transform: translateX(0) scaleX(1);
+          }
+          75% {
+            transform: translateX(-50px) scaleX(-1);
+          }
+          100% {
+            top: 105%;
+            transform: translateX(0) scaleX(1);
+          }
+        }
+
+        /* 💕 Animation coeurs (pour Saint-Valentin) */
+        .heart {
+          position: absolute;
+          bottom: -20px;
+          animation: heart-rise linear infinite;
+        }
+        
+        @keyframes heart-rise {
+          0% {
+            bottom: -5%;
+            transform: translateX(0) scale(1);
+            opacity: 1;
+          }
+          100% {
+            bottom: 105%;
+            transform: translateX(50px) scale(0.5);
+            opacity: 0;
           }
         }
         
