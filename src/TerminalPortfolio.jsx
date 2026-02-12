@@ -220,8 +220,8 @@ const TerminalPortfolio = () => {
 
   const translations = {
     fr: {
-      welcome: ">> Raphaël Auberlet • DevOps Engineer & Expert Cloud",
-      bootComplete: "🚀 DISPONIBLE IMMÉDIATEMENT • Nouveau chapitre, nouvelles opportunités • Tapez 'help' pour commencer",
+      welcome: ">> Raphaël Auberlet • DSI / CTO | Stratégie Cloud & Cybersécurité",
+      bootComplete: "🚀 nashi.cloud • Nouveau projet, nouvelles ambitions • Tapez 'help' pour commencer",
       help: `
 Commandes disponibles:
   about       - Qui suis-je ?
@@ -240,74 +240,72 @@ Commandes disponibles:
       about: `
 ╔═══════════════════════════════════════════════════════════╗
 ║  RAPHAEL AUBERLET                                         ║
-║  DevOps Engineer • Expert Cloud • Problem Solver          ║
+║  DSI / CTO | Stratégie Cloud & Cybersécurité              ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🚀 NOUVEAU CHAPITRE - DISPONIBLE IMMÉDIATEMENT
+🚀 NOUVEAU PROJET - JANVIER 2026
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Après 2 ans en tant que RSI, je suis prêt pour
-   de nouveaux défis ! 100% disponible dès maintenant.
+   Fondateur & Architecte Cloud chez nashi.cloud
+   Infrastructure Cloud souveraine et sécurisée 100% OpenSource
 
-💡 MON SUPER-POUVOIR : Je ne code pas, je résous vos problèmes
-   → 15+ ans à transformer des idées en systèmes robustes
-   → Spécialiste IA/LLM, automation, cloud & infrastructure
-   → Du legacy au cutting-edge : j'ai tout vu, tout fait
+💡 MON EXPERTISE : Vision Stratégique + Excellence Technique
+   → 18 ans d'expérience IT (de développeur à DSI)
+   → Spécialiste Gouvernance SI, Architecture Cloud & DevOps
+   → Expert stack OpenSource : Linux (Kernel), Rust, KVM, Kubernetes
+   → Focus : Souveraineté numérique, Sécurité, Performance
 
 🎯 CE QUE J'APPORTE :
-   → Expert en transformation digitale et automatisation
-   → De l'architecture système au déploiement en production
-   → Leadership technique avec les mains dans le code
+   → Direction & Pilotage SI (Budgets, ERP, Schémas directeurs)
+   → Architecture Cloud Native & Infrastructure critique
+   → DevOps & Security by Design
+   → Transformation digitale et optimisation des processus
 
 🌴 BASÉ À LA RÉUNION (974)
-   📍 Remote-first • Déplacements possibles • Flexible
-   🌍 Ouvert à la mobilité France/International
+   📍 Remote-first • Déplacements France/Europe/International
+   🌍 Mobilité complète selon projets
 
-🎨 MON PARCOURS ATYPIQUE : De l'ébénisterie au DevOps
-   → Même passion pour l'excellence et la créativité
-   → Reconversion réussie, découvertes constantes
-   → J'apprends encore chaque jour (actuellement : MCP, Ollama)`,
+🎨 MON PARCOURS : De l'artisanat à l'architecture Cloud
+   → Passion pour l'excellence et la maîtrise technique
+   → Autodidacte avec veille technologique permanente
+   → Du code aux décisions stratégiques`,
       skills: `
 ╔═══════════════════════════════════════════════════════════╗
 ║           💪 STACK TECHNIQUE & EXPERTISE                  ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🤖 IA & AUTOMATION (⭐ Expertise 2024-2025)
-  ▸ LLM : Ollama, GPT-4, Claude, RAG
-  ▸ MCP : Développement & intégration professionnelle
-  ▸ n8n : Workflows d'automatisation avancés
-  ▸ Python AI Stack : LangChain, vector DBs
+🎯 GOUVERNANCE & MANAGEMENT
+  ▸ Stratégie SI & Schémas directeurs
+  ▸ Alignement IT-Business & Budgets (OpEx/CapEx)
+  ▸ Direction de Projets & Migration ERP (Odoo)
+  ▸ Conformité RGPD & Gouvernance des données
 
-☁️ CLOUD & INFRASTRUCTURE
-  ▸ GCP (Google Cloud Platform) • AWS (Amazon)
-  ▸ Cloudflare (Workers, R2, CDN, DNS, Tunnels)
-  ▸ odoo.sh • Infrastructure as Code
-  ▸ Docker • Kubernetes • CI/CD
+💻 EXPERTISE TECHNIQUE SYSTÈME
+  ▸ Linux Expert : Kernel tuning, Hardening
+  ▸ Virtualisation : KVM, Podman, Kubernetes
+  ▸ Rust : Développement performance-critical
+  ▸ Infrastructure critique & Haute disponibilité
 
-🐍 BACKEND & FRAMEWORKS
-  ▸ Python : Flask, FastAPI, Django
-  ▸ Odoo : Développement & customisation
-  ▸ PHP : Symfony, Laravel
-  ▸ Node.js • API REST/GraphQL
+☁️ CLOUD & DEVOPS
+  ▸ Architecture Cloud Native (100% OpenSource)
+  ▸ DevOps : CI/CD, Terraform, Ansible, Docker
+  ▸ Sécurité : Security by Design, Audit, PCA/PRA
+  ▸ Souveraineté numérique & Stack européenne
 
-⚙️ DEVOPS & AUTOMATION
-  ▸ GitLab CI/CD • GitHub Actions
-  ▸ Ansible • Terraform
-  ▸ Monitoring : Prometheus, Grafana
-  ▸ Linux Administration expert
+🐍 DÉVELOPPEMENT & AUTOMATION
+  ▸ Rust : Orchestration & Performance
+  ▸ Python : Automation, IA & Scripting
+  ▸ API REST & Microservices
+  ▸ Odoo : Développement & Customisation
 
-💻 FRONTEND & MOBILE
-  ▸ JavaScript/TypeScript • React
-  ▸ HTML5 • CSS3 • Tailwind
-  ▸ WinDev • WebDev • WinDev Mobile
-
-🗄️ DATABASES & DATA
+🗄️ INFRASTRUCTURE & DATA
   ▸ PostgreSQL • MySQL • MongoDB
   ▸ Redis • Vector Databases
-  ▸ Data modeling & optimization
+  ▸ Monitoring : Prometheus, Grafana
+  ▸ Architecture distribuée
 
 🎯 SOFT SKILLS
-  ▸ Management d'équipe IT
-  ▸ Architecture système & scalabilité
+  ▸ Direction SI & Management d'équipe
+  ▸ Architecture système & Scalabilité
   ▸ Résolution de problèmes complexes
   ▸ Veille technologique permanente`,
       experience: `
@@ -315,109 +313,122 @@ Commandes disponibles:
 ║               🚀 PARCOURS PROFESSIONNEL                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🔥 DISPONIBLE IMMÉDIATEMENT - Décembre 2025
+🔥 NOUVEAU PROJET - JANVIER 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-[2023 - Nov 2025] SICALAIT - La Réunion
+[Jan 2026 - Présent] nashi.cloud
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-└─ 💼 Responsable Systèmes d'Information
+└─ 🚀 Fondateur & Architecte Cloud
 
-   🎯 Mission accomplie : Transformation digitale réussie !
+   🎯 Mission : Infrastructure Cloud souveraine et sécurisée
    
-   ✅ Modernisation complète de l'infrastructure IT
-   ✅ Migration cloud (GCP) & automatisation DevOps
-   ✅ Mise en place CI/CD & conteneurisation
-   ✅ Gestion équipe technique & prestataires
-   ✅ Architecture système & sécurité
+   ✅ Stratégie & Conception (Stack 100% OpenSource)
+   ✅ Ingénierie Rust : Orchestration optimisée
+   ✅ Sécurité : Security by Design, chaîne de confiance
+   ✅ R&D : Souveraineté numérique & Cloud Native
    
-   💡 Stack : GCP, Docker, K8s, Odoo, Python, Cloudflare
+   💡 Stack : Rust, Linux (Kernel), KVM, Kubernetes
 
 
-[2020 - 2023] SDPMA - Fermes & Jardins - La Réunion
+[Août 2023 - Nov 2025] SICALAIT / SDPMA - La Réunion
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-└─ ⚙️ Ingénieur DevOps & Développeur
+└─ 💼 Responsable Systèmes d'Information (RSI)
 
-   🎯 Mission : Stabiliser, automatiser, optimiser
+   🎯 Mission : Pilotage SI et transformation digitale
    
-   ✅ Transformation infrastructure (on-premise → cloud)
-   ✅ Automatisation complète des déploiements
-   ✅ Maintenance logiciels de caisse (conformité légale)
-   ✅ Développement apps mobiles d'inventaire
-   ✅ Formation équipes aux pratiques DevOps
+   ✅ Pilotage SI : Management département IT & budgets
+   ✅ Direction Projet ERP : Migration complète vers Odoo (MOA)
+   ✅ Opérations : Sécurité & continuité de service groupe
+   ✅ Architecture : Cloud, DevOps, CI/CD
    
-   💡 Stack : AWS, GitLab CI, Docker, Python, WinDev Mobile
+   💡 Stack : Odoo, GCP, Docker, Kubernetes, Python
 
 
-[2007 - 2020] 6Kreation - Auto-entrepreneur (12 ans)
+[Mai 2020 - Août 2023] SDPMA - La Réunion
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-└─ 👔 Directeur & Développeur Full Stack
+└─ ⚙️ Lead Développeur & Architecte Solution
 
-   🎯 Création & gestion entreprise
+   🎯 Mission : Architecture & développement solutions métier
    
-   ✅ Développement applications de gestion (WINDEV/WebDev)
-   ✅ Conception meubles sur mesure (ébénisterie)
+   ✅ Architecture Core Business : Système de caisse (POS)
+   ✅ Omnicanalité : Interconnexion stocks temps réel
+   ✅ Optimisation Logistique : Applications mobiles métier
+   ✅ DevOps : Automatisation complète déploiements
+   
+   💡 Stack : Python, WinDev Mobile, AWS, GitLab CI
+
+
+[2007 - 2020] Indépendant - Auto-entrepreneur (13 ans)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ 👔 Expert IT & Consultant Fullstack
+
+   🎯 Mission : Expertise technique & solutions sur mesure
+   
+   ✅ Expertise Linux : Administration serveurs critiques
+   ✅ Architecture web haute disponibilité
+   ✅ Solutions métier complexes pour clients internationaux
    ✅ Gestion complète : commercial, technique, production
-   ✅ Reconversion progressive vers le dev & l'IT
    
-   💡 Stack : WINDEV, WebDev Mobile, SQL, gestion projet
+   💡 Stack : Linux, WINDEV, WebDev, SQL
 
 
 📈 CHIFFRES CLÉS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  • 15+ années d'expérience technique
-  • 5 ans à maintenir des infras critiques en production
+  • 18 années d'expérience technique
   • 2 transformations digitales majeures menées à bien
+  • Direction SI avec gestion budgets & équipes
   • ∞ problèmes résolus avec créativité et pragmatisme`,
       projects: `
 ╔═══════════════════════════════════════════════════════════╗
 ║          ⚡ PROJETS & RÉALISATIONS MARQUANTES              ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🏭 TRANSFORMATION DIGITALE SICALAIT (2023-Nov 2025)
+🚀 nashi.cloud - INFRASTRUCTURE CLOUD SOUVERAINE (2026)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   → Migration infrastructure vers GCP
-   → Automatisation complète des déploiements (GitLab CI/CD)
-   → Modernisation stack technique (conteneurisation)
-   → Zéro downtime pendant la transformation
+   → Création infrastructure Cloud 100% OpenSource
+   → Ingénierie Rust : orchestration optimisée
+   → Security by Design & chaîne de confiance maîtrisée
+   → Focus : Souveraineté numérique & performance
    
-   📊 Impact : +80% vélocité déploiements, -60% incidents
-   🛠️ Stack : GCP, Docker, Kubernetes, Odoo, Python
+   📊 Impact : Solution européenne, sécurisée, performante
+   🛠️ Stack : Rust, Linux (Kernel), KVM, Kubernetes
 
 
-💰 SYSTÈMES DE CAISSE & CONFORMITÉ (2020-2023)
+🏭 MIGRATION ERP & TRANSFORMATION SI SICALAIT (2023-2025)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   → Maintenance logiciels de caisse (conformité légale)
-   → Mise aux normes fiscales et certifications
-   → Développement apps mobiles d'inventaire
-   → Synchronisation temps réel stocks/caisses
+   → Direction projet migration complète vers Odoo (MOA)
+   → Refonte processus métier & gouvernance SI
+   → Migration cloud (GCP) & automatisation DevOps
+   → Gestion budgets & arbitrage investissements IT
+   
+   📊 Impact : Transformation digitale réussie, SI unifié
+   🛠️ Stack : Odoo, GCP, Docker, Kubernetes, Python
+
+
+💰 ARCHITECTURE POS & OMNICANALITÉ (2020-2023)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → Conception système de caisse (POS) centralisé
+   → Interconnexion temps réel stocks/e-commerce
+   → Applications mobiles métier pour logistique
+   → Conformité légale & certifications
    
    📊 Impact : 100% conformité, 0 perte de données
    🛠️ Stack : Python, WinDev Mobile, PostgreSQL, API REST
 
 
-🤖 AUTOMATISATIONS IA & WORKFLOWS (2024-2025)
+☁️ INFRASTRUCTURE CRITIQUE & HAUTE DISPONIBILITÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   → Intégration LLM en production (Ollama, GPT-4)
-   → Développement MCP servers pour workflows métier
-   → Automatisation n8n : veille, reporting, alertes
-   → RAG pour documentation technique interne
-   
-   📊 Impact : -70% temps tâches répétitives
-   🛠️ Stack : Ollama, n8n, MCP, Python, Vector DBs
-
-
-☁️ INFRASTRUCTURE MULTI-CLOUD
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   → Architecture haute disponibilité GCP + AWS
-   → CDN & sécurité Cloudflare (Workers, Tunnels)
+   → Architecture multi-cloud haute disponibilité
    → Monitoring & alerting temps réel
    → Disaster recovery & backups automatisés
+   → Hardening système & audit sécurité
    
    📊 Impact : 99.9% uptime, sécurité renforcée
-   🛠️ Stack : GCP, AWS, Cloudflare, Terraform, Ansible
+   🛠️ Stack : Linux, KVM, Prometheus, Grafana, Terraform
 
 
-💡 + DIZAINES DE PROJETS sur mesure
+💡 + NOMBREUX PROJETS sur mesure
+   → 18 ans d'expertise à concevoir des solutions robustes
    → Portfolio complet & références disponibles sur demande
    → Code samples sur GitHub : github.com/ralphi2811`,
       contact: `
@@ -426,7 +437,7 @@ Commandes disponibles:
 ╚═══════════════════════════════════════════════════════════╝
 
 📧 Email
-   → contact@raphaeldev.fr
+   → raphael@nashi.cloud
    → Réponse sous 24h garanti
 
 💼 GitHub
@@ -441,22 +452,26 @@ Commandes disponibles:
    → https://ralphi2811.github.io/cv/
    → Télécharger PDF: https://ralphi2811.github.io/cv/cv.pdf
 
+🌐 nashi.cloud
+   → https://nashi.cloud
+   → Infrastructure Cloud souveraine
+
 ☎️ Téléphone
    → +262 693 39 58 98
    → WhatsApp / Télégram disponibles
 
 📍 Localisation
    → Le Tampon, La Réunion (974)
-   → Remote-first • Déplacements France/Europe OK
+   → Remote-first • Déplacements France/Europe/International
 
 
 💡 DISPONIBILITÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   🔥 DISPONIBLE IMMÉDIATEMENT - Décembre 2025
-   ✅ CDI • CDD • Contrats longue durée
-   ✅ Missions freelance / consulting
-   ✅ Remote 100% ou hybride
-   ✅ Mobilité France/International possible
+   🚀 Actif sur nashi.cloud - Ouvert aux collaborations
+   ✅ Consulting & Conseil stratégique
+   ✅ Architecture Cloud & Infrastructure
+   ✅ Missions freelance / projets spécifiques
+   ✅ Remote ou déplacements selon projets
 
 
 > Tapez 'hire' pour un message spécial recruteurs 😉`,
@@ -492,52 +507,52 @@ Commandes disponibles:
 ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
 ╔═══════════════════════════════════════════════════════════╗
-║  🔥 DISPONIBLE IMMÉDIATEMENT - DÉCEMBRE 2025 🔥           ║
+║  🚀 FONDATEUR nashi.cloud - OUVERT AUX COLLABORATIONS 🚀  ║
 ╚═══════════════════════════════════════════════════════════╝
 
-⚡ NOUVEAU CHAPITRE PROFESSIONNEL
-   Après 2 ans comme RSI, je suis prêt pour de nouvelles
-   aventures ! Disponible immédiatement, motivé à 200%.
+⚡ NOUVEAU PROJET - JANVIER 2026
+   Création de nashi.cloud : Infrastructure Cloud souveraine
+   Ouvert aux missions de conseil & architecture
 
 🎯 VOUS CHERCHEZ QUELQU'UN QUI...
    ✅ Comprend VRAIMENT le business (pas juste la tech)
-   ✅ A gardé des systèmes critiques en prod pendant 5 ans
-   ✅ Sait coder ET manager (le rare combo)
-   ✅ Reste à jour sur l'IA, l'automation, le cloud moderne
-   ✅ Peut discuter avec le CEO comme avec les devs
-   ✅ Est DISPONIBLE MAINTENANT (pas dans 3 mois !)
+   ✅ Allie vision stratégique DSI ET expertise technique
+   ✅ A piloté des transformations SI complètes (ERP, Cloud)
+   ✅ Maîtrise Linux Kernel, Rust, Architecture Cloud Native
+   ✅ Sait parler au CEO comme aux équipes techniques
+   ✅ A 18 ans d'XP du code aux décisions stratégiques
 
 💪 JE NE SUIS PAS...
-   ❌ Un dev qui attend qu'on lui dise quoi faire
-   ❌ Un manager qui a oublié comment on code
-   ❌ Quelqu'un qui a peur de mettre les mains dans le cambouis
+   ❌ Un consultant qui ne code plus depuis 10 ans
+   ❌ Un dev qui ne comprend pas les enjeux business
+   ❌ Quelqu'un qui a peur des infrastructures critiques
 
 🚀 JE SUIS...
-   ✨ Un problem solver qui adore les défis techniques
-   ✨ Un touche-à-tout qui apprend vite (actuellement : MCP)
-   ✨ Passionné par l'excellence et l'innovation
-   ✨ Créatif (merci l'ébénisterie !)
-   ✨ Fiable (j'ai gardé le navire à flot pendant les tempêtes)
+   ✨ DSI/CTO qui aime garder les mains dans la tech
+   ✨ Architecte Cloud avec focus souveraineté & sécurité
+   ✨ Expert Linux & Rust pour performance critique
+   ✨ Passionné par l'excellence et la robustesse
+   ✨ Fiable (j'ai mené 2 transformations digitales majeures)
 
 💼 CE QUE JE PEUX FAIRE POUR VOUS :
-   → Architecturer & déployer votre infra cloud
-   → Moderniser votre legacy sans tout casser
-   → Automatiser ce qui doit l'être (IA inclus)
-   → Former et booster vos équipes techniques
-   → Gérer vos projets critiques de A à Z
-   → Ou juste résoudre ce problème que personne n'arrive à fixer
+   → Direction SI & Conseil stratégique IT
+   → Architecture Cloud souveraine & sécurisée
+   → Migration ERP & transformation digitale
+   → Audit infrastructure & sécurité
+   → Formation équipes DevOps & Cloud Native
+   → Résolution de problèmes complexes
 
-👁️ POSTES VISÉS :
-   • Head of Engineering / CTO
-   • Lead DevOps / SRE / Platform Engineer
-   • Architecte Cloud / Solutions Architect
-   • Responsable / Directeur Systèmes d'Information
-   • Senior Full Stack avec leadership technique
-   • Ou on en discute ! (je suis ouvert)
+👁️ MISSIONS & COLLABORATIONS :
+   • Conseil stratégique DSI/CTO
+   • Architecture Cloud & Infrastructure critique
+   • Direction de projets IT majeurs
+   • Audit technique & sécurité
+   • Formation & mentoring équipes
+   • Ou on en discute ! (ouvert aux projets innovants)
 
-📩 ON DISCUTE ?
+📩 ON ÉCHANGE ?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   contact@raphaeldev.fr
+   raphael@nashi.cloud
    +262 693 39 58 98
    linkedin.com/in/raphaelauberlet
    
@@ -572,8 +587,8 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
       notFound: "Commande non reconnue. Tapez 'help' pour la liste des commandes."
     },
     en: {
-      welcome: ">> Raphaël Auberlet • DevOps Engineer & Cloud Expert",
-      bootComplete: "🚀 AVAILABLE IMMEDIATELY • New chapter, new opportunities • Type 'help' to start",
+      welcome: ">> Raphaël Auberlet • CIO / CTO | Cloud Strategy & Cybersecurity",
+      bootComplete: "🚀 nashi.cloud • New project, new ambitions • Type 'help' to start",
       help: `Available commands:
   about       - Who am I?
   skills      - Tech stack & expertise
@@ -591,168 +606,219 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
       about: `
 ╔═══════════════════════════════════════════════════════════╗
 ║  RAPHAEL AUBERLET                                         ║
-║  DevOps Engineer • Cloud Expert • Problem Solver          ║
+║  CIO / CTO | Cloud Strategy & Cybersecurity               ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🚀 NEW CHAPTER - AVAILABLE IMMEDIATELY
+🚀 NEW PROJECT - JANUARY 2026
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   After 2 years as IT Manager, I'm ready for
-   new challenges! 100% available right now.
+   Founder & Cloud Architect at nashi.cloud
+   Sovereign and secure Cloud infrastructure 100% OpenSource
 
-💡 MY SUPERPOWER: I don't code, I solve your problems
-   → 15+ years turning ideas into robust systems
-   → Specialist in AI/LLM, automation, cloud & infrastructure
-   → From legacy to cutting-edge: seen it all, done it all
+💡 MY EXPERTISE: Strategic Vision + Technical Excellence
+   → 18 years of IT experience (from developer to CIO)
+   → Specialist in IT Governance, Cloud Architecture & DevOps
+   → Expert OpenSource stack: Linux (Kernel), Rust, KVM, Kubernetes
+   → Focus: Digital sovereignty, Security, Performance
 
 🎯 WHAT I BRING:
-   → Expert in digital transformation & automation
-   → From system architecture to production deployment
-   → Technical leadership with hands-on coding
+   → IT Management & Direction (Budgets, ERP, Strategic plans)
+   → Cloud Native Architecture & Critical Infrastructure
+   → DevOps & Security by Design
+   → Digital transformation and process optimization
 
 🌴 BASED IN REUNION ISLAND (974)
-   📍 Remote-first • Travel available • Flexible
-   🌍 Open to relocation France/International
+   📍 Remote-first • Travel France/Europe/International
+   🌍 Full mobility depending on projects
 
-🎨 ATYPICAL BACKGROUND: From woodworking to DevOps
-   → Same passion for excellence and creativity
-   → Successful career change, constant discovery
-   → Still learning every day (currently: MCP, Ollama)`,
+🎨 MY JOURNEY: From craftsmanship to Cloud architecture
+   → Passion for excellence and technical mastery
+   → Self-taught with continuous technology watch
+   → From code to strategic decisions`,
       skills: `
 ╔═══════════════════════════════════════════════════════════╗
 ║               💪 TECH STACK & EXPERTISE                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🤖 AI & AUTOMATION (⭐ 2024-2025 Expertise)
-  ▸ LLM: Ollama, GPT-4, Claude, RAG
-  ▸ MCP: Development & professional integration
-  ▸ n8n: Advanced automation workflows
-  ▸ Python AI Stack: LangChain, vector DBs
+🎯 GOVERNANCE & MANAGEMENT
+  ▸ IT Strategy & Master plans
+  ▸ IT-Business Alignment & Budgets (OpEx/CapEx)
+  ▸ Project Management & ERP Migration (Odoo)
+  ▸ GDPR Compliance & Data governance
 
-☁️ CLOUD & INFRASTRUCTURE
-  ▸ GCP (Google Cloud Platform) • AWS (Amazon)
-  ▸ Cloudflare (Workers, R2, CDN, DNS, Tunnels)
-  ▸ odoo.sh • Infrastructure as Code
-  ▸ Docker • Kubernetes • CI/CD
+💻 TECHNICAL SYSTEM EXPERTISE
+  ▸ Linux Expert: Kernel tuning, Hardening
+  ▸ Virtualization: KVM, Podman, Kubernetes
+  ▸ Rust: Performance-critical development
+  ▸ Critical infrastructure & High availability
 
-🐍 BACKEND & FRAMEWORKS
-  ▸ Python: Flask, FastAPI, Django
-  ▸ Odoo: Development & customization
-  ▸ PHP: Symfony, Laravel
-  ▸ Node.js • REST/GraphQL APIs
+☁️ CLOUD & DEVOPS
+  ▸ Cloud Native Architecture (100% OpenSource)
+  ▸ DevOps: CI/CD, Terraform, Ansible, Docker
+  ▸ Security: Security by Design, Audit, DRP/BCP
+  ▸ Digital sovereignty & European stack
 
-⚙️ DEVOPS & AUTOMATION
-  ▸ GitLab CI/CD • GitHub Actions
-  ▸ Ansible • Terraform
-  ▸ Monitoring: Prometheus, Grafana
-  ▸ Expert Linux Administration
+🐍 DEVELOPMENT & AUTOMATION
+  ▸ Rust: Orchestration & Performance
+  ▸ Python: Automation, AI & Scripting
+  ▸ REST API & Microservices
+  ▸ Odoo: Development & Customization
 
-💻 FRONTEND & MOBILE
-  ▸ JavaScript/TypeScript • React
-  ▸ HTML5 • CSS3 • Tailwind
-  ▸ WinDev • WebDev • WinDev Mobile
-
-🗄️ DATABASES & DATA
+🗄️ INFRASTRUCTURE & DATA
   ▸ PostgreSQL • MySQL • MongoDB
   ▸ Redis • Vector Databases
-  ▸ Data modeling & optimization
+  ▸ Monitoring: Prometheus, Grafana
+  ▸ Distributed architecture
 
 🎯 SOFT SKILLS
-  ▸ IT team management
-  ▸ System architecture & scalability
+  ▸ IT Management & Team leadership
+  ▸ System Architecture & Scalability
   ▸ Complex problem solving
-  ▸ Continuous tech watch`,
+  ▸ Continuous technology watch`,
       experience: `
 ╔═══════════════════════════════════════════════════════════╗
 ║              🚀 PROFESSIONAL BACKGROUND                   ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🔥 AVAILABLE IMMEDIATELY - December 2025
+🔥 NEW PROJECT - JANUARY 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-[2023 - Nov 2025] SICALAIT - Reunion Island
+[Jan 2026 - Present] nashi.cloud
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-└─ 💼 IT Systems Manager
-   🎯 Mission accomplished: Successful digital transformation!
-   ✅ Complete IT infrastructure modernization
-   ✅ Cloud migration (GCP) & DevOps automation
-   ✅ CI/CD implementation & containerization
-   💡 Stack: GCP, Docker, K8s, Odoo, Python, Cloudflare
+└─ 🚀 Founder & Cloud Architect
 
-[2020 - 2023] SDPMA - Fermes & Jardins
+   🎯 Mission: Sovereign and secure Cloud infrastructure
+   
+   ✅ Strategy & Design (100% OpenSource Stack)
+   ✅ Rust Engineering: Optimized orchestration
+   ✅ Security: Security by Design, trust chain
+   ✅ R&D: Digital sovereignty & Cloud Native
+   
+   💡 Stack: Rust, Linux (Kernel), KVM, Kubernetes
+
+
+[Aug 2023 - Nov 2025] SICALAIT / SDPMA - Reunion Island
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-└─ ⚙️ DevOps Engineer & Developer
-   🎯 Mission: Stabilize, automate, optimize
-   ✅ Infrastructure transformation (on-premise → cloud)
-   ✅ Complete deployment automation
-   ✅ POS software maintenance (legal compliance)
-   ✅ Mobile inventory apps development
-   💡 Stack: AWS, GitLab CI, Docker, Python, WinDev Mobile
+└─ 💼 Chief Information Officer (CIO)
 
-[2007 - 2020] 6Kreation - Self-employed (12 years)
+   🎯 Mission: IT Management & digital transformation
+   
+   ✅ IT Management: IT department & budget management
+   ✅ ERP Project Management: Full migration to Odoo (PMO)
+   ✅ Operations: Security & business continuity for group
+   ✅ Architecture: Cloud, DevOps, CI/CD
+   
+   💡 Stack: Odoo, GCP, Docker, Kubernetes, Python
+
+
+[May 2020 - Aug 2023] SDPMA - Reunion Island
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-└─ 👔 Director & Full Stack Developer
-   ✅ Management apps development (WINDEV/WebDev)
-   ✅ Custom furniture design (woodworking)
-   ✅ Complete business management
-   💡 Stack: WINDEV, WebDev Mobile, SQL
+└─ ⚙️ Lead Developer & Solution Architect
 
-📈 KEY FIGURES: 15+ years • 5 years critical infra • ∞ problems solved`,
+   🎯 Mission: Architecture & business solutions development
+   
+   ✅ Core Business Architecture: Point of Sale (POS) system
+   ✅ Omnichannel: Real-time stock interconnection
+   ✅ Logistics Optimization: Business mobile apps
+   ✅ DevOps: Complete deployment automation
+   
+   💡 Stack: Python, WinDev Mobile, AWS, GitLab CI
+
+
+[2007 - 2020] Self-employed - Freelancer (13 years)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+└─ 👔 IT Expert & Fullstack Consultant
+
+   🎯 Mission: Technical expertise & custom solutions
+   
+   ✅ Linux Expertise: Critical server administration
+   ✅ High availability web architecture
+   ✅ Complex business solutions for international clients
+   ✅ Complete management: commercial, technical, production
+   
+   💡 Stack: Linux, WINDEV, WebDev, SQL
+
+
+📈 KEY FIGURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • 18 years of technical experience
+  • 2 major digital transformations led
+  • IT Management with budget & team management
+  • ∞ problems solved with creativity and pragmatism`,
       projects: `
 ╔═══════════════════════════════════════════════════════════╗
 ║                   ⚡ KEY ACHIEVEMENTS                      ║
 ╚═══════════════════════════════════════════════════════════╝
 
-🏭 SICALAIT DIGITAL TRANSFORMATION (2023-Nov 2025)
-   → Infrastructure migration to GCP
-   → Complete deployment automation (GitLab CI/CD)
-   → Zero downtime during transformation
-   📊 Impact: +80% deploy velocity, -60% incidents
-   🛠️ Stack: GCP, Docker, Kubernetes, Odoo, Python
+🚀 nashi.cloud - SOVEREIGN CLOUD INFRASTRUCTURE (2026)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → 100% OpenSource Cloud infrastructure creation
+   → Rust Engineering: optimized orchestration
+   → Security by Design & controlled trust chain
+   → Focus: Digital sovereignty & performance
+   
+   📊 Impact: European solution, secure, performant
+   🛠️ Stack: Rust, Linux (Kernel), KVM, Kubernetes
 
-💰 POS SYSTEMS & COMPLIANCE (2020-2023)
-   → POS software maintenance (legal compliance)
-   → Tax regulations & certifications  
-   → Mobile inventory apps development
-   → Real-time stock/POS synchronization
+
+🏭 ERP MIGRATION & IT TRANSFORMATION SICALAIT (2023-2025)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → ERP Project Management: full migration to Odoo (PMO)
+   → Business process redesign & IT governance
+   → Cloud migration (GCP) & DevOps automation
+   → Budget management & IT investment arbitration
+   
+   📊 Impact: Successful digital transformation, unified IT
+   🛠️ Stack: Odoo, GCP, Docker, Kubernetes, Python
+
+
+💰 POS ARCHITECTURE & OMNICHANNEL (2020-2023)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → Centralized Point of Sale (POS) system design
+   → Real-time stock/e-commerce interconnection
+   → Business mobile apps for logistics
+   → Legal compliance & certifications
+   
    📊 Impact: 100% compliance, 0 data loss
    🛠️ Stack: Python, WinDev Mobile, PostgreSQL, REST API
 
-🤖 AI AUTOMATION & WORKFLOWS (2024-2025)
-   → LLM integration in production (Ollama, GPT-4)
-   → MCP servers development for business workflows
-   📊 Impact: -70% time on repetitive tasks
-   🛠️ Stack: Ollama, n8n, MCP, Python, Vector DBs
 
-☁️ MULTI-CLOUD INFRASTRUCTURE
-   → High availability architecture GCP + AWS
-   → CDN & security with Cloudflare
+☁️ CRITICAL & HIGH AVAILABILITY INFRASTRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   → Multi-cloud high availability architecture
+   → Real-time monitoring & alerting
+   → Disaster recovery & automated backups
+   → System hardening & security audit
+   
    📊 Impact: 99.9% uptime, enhanced security
-   🛠️ Stack: GCP, AWS, Cloudflare, Terraform, Ansible
+   🛠️ Stack: Linux, KVM, Prometheus, Grafana, Terraform
 
-💡 + DOZENS of custom projects
-   → Full portfolio & references available
+
+💡 + MANY custom projects
+   → 18 years of expertise designing robust solutions
+   → Full portfolio & references available on request
    → Code samples: github.com/ralphi2811`,
       contact: `
 ╔═══════════════════════════════════════════════════════════╗
 ║                   📬 CONTACT & LINKS                      ║
 ╚═══════════════════════════════════════════════════════════╝
 
-📧 Email → contact@raphaeldev.fr (24h response guaranteed)
+📧 Email → raphael@nashi.cloud (24h response guaranteed)
 💼 GitHub → github.com/ralphi2811
 🔗 LinkedIn → linkedin.com/in/raphaelauberlet
 📄 CV → https://ralphi2811.github.io/cv/
    Download PDF: https://ralphi2811.github.io/cv/cv.pdf
+🌐 nashi.cloud → https://nashi.cloud
 ☎️ Phone → +262 693 39 58 98
 📍 Location → Le Tampon, Reunion Island (974)
-💻 Remote-first • Travel France/Europe OK
+💻 Remote-first • Travel France/Europe/International
 
 💡 AVAILABILITY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   🔥 AVAILABLE IMMEDIATELY - December 2025
-   ✅ Full-time contracts • Long-term projects
-   ✅ Freelance/consulting missions
-   ✅ 100% remote or hybrid
-   ✅ Relocation France/International possible
+   🚀 Active on nashi.cloud - Open to collaborations
+   ✅ Strategic IT consulting & advisory
+   ✅ Cloud Architecture & Infrastructure
+   ✅ Freelance missions / specific projects
+   ✅ Remote or travel depending on projects
 
 > Type 'hire' for a special recruiter message 😉`,
       cv: `
@@ -787,47 +853,55 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚══════╝    ╚═╝
 
 ╔═══════════════════════════════════════════════════════════╗
-║  🔥 AVAILABLE IMMEDIATELY - DECEMBER 2025 🔥              ║
+║  🚀 nashi.cloud FOUNDER - OPEN TO COLLABORATIONS 🚀       ║
 ╚═══════════════════════════════════════════════════════════╝
 
-⚡ NEW PROFESSIONAL CHAPTER
-   After 2 years as IT Manager, I'm ready for new
-   adventures! Available immediately, 200% motivated.
+⚡ NEW PROJECT - JANUARY 2026
+   nashi.cloud creation: Sovereign Cloud infrastructure
+   Open to consulting & architecture missions
 
 🎯 YOU'RE LOOKING FOR SOMEONE WHO...
    ✅ REALLY understands business (not just tech)
-   ✅ Kept critical systems in prod for 5 years
-   ✅ Can code AND manage (the rare combo)
-   ✅ Stays current on AI, automation, modern cloud
-   ✅ Can talk to CEOs and devs alike
-   ✅ Is AVAILABLE NOW (not in 3 months!)
+   ✅ Combines CIO strategic vision AND technical expertise
+   ✅ Has led complete IT transformations (ERP, Cloud)
+   ✅ Masters Linux Kernel, Rust, Cloud Native Architecture
+   ✅ Can talk to CEOs as well as technical teams
+   ✅ Has 18 years XP from code to strategic decisions
+
+💪 I'M NOT...
+   ❌ A consultant who hasn't coded in 10 years
+   ❌ A dev who doesn't understand business issues
+   ❌ Someone afraid of critical infrastructure
 
 🚀 I AM...
-   ✨ A problem solver who loves technical challenges
-   ✨ A jack-of-all-trades who learns fast (currently: MCP)
-   ✨ Passionate about excellence and innovation
-   ✨ Creative (thanks woodworking!)
-   ✨ Reliable (kept the ship afloat through storms)
+   ✨ CIO/CTO who loves keeping hands in tech
+   ✨ Cloud Architect focusing on sovereignty & security
+   ✨ Linux & Rust expert for critical performance
+   ✨ Passionate about excellence and robustness
+   ✨ Reliable (led 2 major digital transformations)
 
 💼 WHAT I CAN DO FOR YOU:
-   → Architect & deploy your cloud infrastructure
-   → Modernize your legacy without breaking everything
-   → Automate what needs to be (AI included)
-   → Train and boost your technical teams
-   → Manage your critical projects end-to-end
-   → Or just fix that problem nobody can solve
+   → IT Management & Strategic IT consulting
+   → Sovereign & secure Cloud architecture
+   → ERP migration & digital transformation
+   → Infrastructure & security audit
+   → DevOps & Cloud Native team training
+   → Complex problem solving
 
-👁️ TARGET POSITIONS:
-   • Head of Engineering / CTO
-   • Lead DevOps / SRE / Platform Engineer
-   • Cloud / Solutions Architect
-   • IT Director / Systems Manager
-   • Senior Full Stack with technical leadership
-   • Or let's discuss! (I'm open)
+👁️ MISSIONS & COLLABORATIONS:
+   • Strategic CIO/CTO consulting
+   • Cloud Architecture & Critical infrastructure
+   • Major IT project management
+   • Technical & security audit
+   • Team training & mentoring
+   • Or let's discuss! (open to innovative projects)
 
-📩 LET'S TALK?
-   contact@raphaeldev.fr • +262 693 39 58 98
+📩 LET'S EXCHANGE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   raphael@nashi.cloud
+   +262 693 39 58 98
    linkedin.com/in/raphaelauberlet
+   
    Virtual coffee offered ☕ • Fast response guaranteed ⚡
 
 P.S.: If you're reading this, you appreciate original profiles.
