@@ -229,6 +229,7 @@ Commandes disponibles:
   xp          - Parcours professionnel
   projects    - Réalisations marquantes
   contact     - Me contacter
+  cv          - 📄 Voir/télécharger mon CV
   lang en/fr  - Changer de langue
   matrix      - 🥚
   hire        - 💼 Message pour recruteurs
@@ -436,6 +437,10 @@ Commandes disponibles:
    → linkedin.com/in/raphaelauberlet
    → Réseau professionnel & recommandations
 
+📄 CV
+   → https://ralphi2811.github.io/cv/
+   → Télécharger PDF: https://ralphi2811.github.io/cv/cv.pdf
+
 ☎️ Téléphone
    → +262 693 39 58 98
    → WhatsApp / Télégram disponibles
@@ -455,6 +460,29 @@ Commandes disponibles:
 
 
 > Tapez 'hire' pour un message spécial recruteurs 😉`,
+      cv: `
+╔═══════════════════════════════════════════════════════════╗
+║                    📄 CURRICULUM VITAE                    ║
+╚═══════════════════════════════════════════════════════════╝
+
+🌐 CV en ligne (interactif)
+   → https://ralphi2811.github.io/cv/
+   → Version web avec sélection de langue FR/EN
+   → Navigation interactive et moderne
+
+📥 Télécharger le PDF
+   → https://ralphi2811.github.io/cv/cv.pdf
+   → Format standard pour impression
+   → Téléchargement direct
+
+💡 Le CV complet contient :
+   ✓ Parcours professionnel détaillé
+   ✓ Stack technique complète
+   ✓ Formations et certifications
+   ✓ Projets phares et réalisations
+   ✓ Langues et centres d'intérêt
+
+> Ouvrez le lien dans votre navigateur pour consulter ou télécharger`,
       hire: `
 ██╗  ██╗██╗██████╗ ███████╗    ███╗   ███╗███████╗    ██╗
 ██║  ██║██║██╔══██╗██╔════╝    ████╗ ████║██╔════╝    ██║
@@ -552,6 +580,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
   xp          - Professional background
   projects    - Key achievements
   contact     - Contact me
+  cv          - 📄 View/download my CV
   lang en/fr  - Change language
   matrix      - 🥚
   hire        - 💼 Message for recruiters
@@ -711,6 +740,8 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
 📧 Email → contact@raphaeldev.fr (24h response guaranteed)
 💼 GitHub → github.com/ralphi2811
 🔗 LinkedIn → linkedin.com/in/raphaelauberlet
+📄 CV → https://ralphi2811.github.io/cv/
+   Download PDF: https://ralphi2811.github.io/cv/cv.pdf
 ☎️ Phone → +262 693 39 58 98
 📍 Location → Le Tampon, Reunion Island (974)
 💻 Remote-first • Travel France/Europe OK
@@ -724,6 +755,29 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
    ✅ Relocation France/International possible
 
 > Type 'hire' for a special recruiter message 😉`,
+      cv: `
+╔═══════════════════════════════════════════════════════════╗
+║                    📄 CURRICULUM VITAE                    ║
+╚═══════════════════════════════════════════════════════════╝
+
+🌐 Online CV (interactive)
+   → https://ralphi2811.github.io/cv/
+   → Web version with FR/EN language selection
+   → Modern and interactive navigation
+
+📥 Download PDF
+   → https://ralphi2811.github.io/cv/cv.pdf
+   → Standard format for printing
+   → Direct download
+
+💡 The complete CV contains:
+   ✓ Detailed professional background
+   ✓ Complete tech stack
+   ✓ Education and certifications
+   ✓ Flagship projects and achievements
+   ✓ Languages and interests
+
+> Open the link in your browser to view or download`,
       hire: `
 ██╗  ██╗██╗██████╗ ███████╗    ███╗   ███╗███████╗    ██╗
 ██║  ██║██║██╔══██╗██╔════╝    ████╗ ████║██╔════╝    ██║
