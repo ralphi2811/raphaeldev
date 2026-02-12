@@ -1243,6 +1243,11 @@ P.S.: If you're reading this, you appreciate original profiles.
       return;
     }
 
+    if (trimmedCmd === 'cv') {
+      typeText(t.cv);
+      return;
+    }
+
     if (trimmedCmd === 'hire') {
       typeText(t.hire);
       return;
