@@ -1248,7 +1248,7 @@ P.S.: If you're reading this, you appreciate original profiles.
   // Fonction pour envoyer des événements à Umami
   const trackCommand = (command, category = 'terminal_command') => {
     if (window.umami) {
-      window.umami.track('terminal_interaction', {
+      window.umami.track(`terminal: ${command}`, {
         command: command,
         category: category,
         language: lang
