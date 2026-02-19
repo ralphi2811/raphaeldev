@@ -1245,13 +1245,12 @@ P.S.: If you're reading this, you appreciate original profiles.
     typingIntervalRef.current = typeInterval;
   };
 
-  // Fonction pour envoyer des événements à Google Tag Manager
+  // Fonction pour envoyer des événements à Umami
   const trackCommand = (command, category = 'terminal_command') => {
-    if (window.dataLayer) {
-      window.dataLayer.push({
-        event: 'terminal_interaction',
-        command_name: command,
-        command_category: category,
+    if (window.umami) {
+      window.umami.track('terminal_interaction', {
+        command: command,
+        category: category,
         language: lang
       });
     }
