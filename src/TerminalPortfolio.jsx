@@ -380,7 +380,7 @@ Commandes disponibles:
   • ∞ problèmes résolus avec créativité et pragmatisme`,
       projects: `
 ╔═══════════════════════════════════════════════════════════╗
-║          ⚡ PROJETS & RÉALISATIONS MARQUANTES              ║
+║          ⚡ PROJETS & RÉALISATIONS MARQUANTES             ║
 ╚═══════════════════════════════════════════════════════════╝
 
 🚀 nashi.cloud - INFRASTRUCTURE CLOUD SOUVERAINE (2026)
@@ -746,7 +746,7 @@ P.S. : Si vous lisez ça, c'est que vous appréciez les profils
   • ∞ problems solved with creativity and pragmatism`,
       projects: `
 ╔═══════════════════════════════════════════════════════════╗
-║                   ⚡ KEY ACHIEVEMENTS                      ║
+║                   ⚡ KEY ACHIEVEMENTS                     ║
 ╚═══════════════════════════════════════════════════════════╝
 
 🚀 nashi.cloud - SOVEREIGN CLOUD INFRASTRUCTURE (2026)
@@ -909,7 +909,7 @@ P.S.: If you're reading this, you appreciate original profiles.
       easter: `
 ╔══════════════════════════════════════════════════════════╗
 ║           🎁 HIDDEN COMMANDS & EASTER EGGS               ║
-║         (Because the best devs are curious)              ║
+║          (Because the best devs are curious)             ║
 ╚══════════════════════════════════════════════════════════╝
 
 🔓 HACKING & SECURITY
@@ -1602,7 +1602,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 🎉 FÉLICITATIONS ! Vous avez trouvé la commande secrète !
 
 ╔═══════════════════════════════════════════════════════╗
-║                  ⚡ GOD MODE ACTIVÉ ⚡                  ║
+║                 ⚡ GOD MODE ACTIVÉ ⚡                 ║
 ╚═══════════════════════════════════════════════════════╝
 
 🌟 BONUS DÉBLOQUÉS :
@@ -1633,7 +1633,7 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
 🎉 CONGRATULATIONS! You found the secret command!
 
 ╔═══════════════════════════════════════════════════════╗
-║                  ⚡ GOD MODE ACTIVATED ⚡               ║
+║                ⚡ GOD MODE ACTIVATED ⚡               ║
 ╚═══════════════════════════════════════════════════════╝
 
 🌟 UNLOCKED BONUSES:
@@ -1948,15 +1948,15 @@ rtt min/avg/max/mdev = 0.037/0.039/0.042/0.002 ms
       <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
         <pre className="text-xs animate-pulse">
 {`
-    ╔═══════════════════════════════════════╗
-    ║    DEVELOPER • DEVOPS • FULL STACK    ║
-    ╚═══════════════════════════════════════╝
-          ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-         █░░░░░░░░░░░░░░░░░░░░░░░░░░█
-         █░░ PYTHON • REACT • PHP ░░█
-         █░░ DOCKER • K8S • CI/CD ░░█
-         █░░░░░░░░░░░░░░░░░░░░░░░░░░█
-          ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+    ╔═════════════════════════════════════════════╗
+    ║    DSI • DEVOPS • ARCHITECT • FULL STACK    ║
+    ╚═════════════════════════════════════════════╝
+               ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+              █░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+              █░░ PYTHON • REACT • RUST ░░█
+              █░░ DOCKER • K8S • CI/CD  ░░█
+              █░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+               ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 `}
         </pre>
       </div>
