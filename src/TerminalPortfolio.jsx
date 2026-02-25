@@ -937,22 +937,24 @@ P.S.: If you're reading this, you appreciate original profiles.
   const t = translations[lang];
 
   const bootSequence = [
-    "RAPHAELDEV TERMINAL OS - ULTRA EDITION",
-    "Detecting hardware...",
-    "├─ CPU: Brain v2.0 [Overclocked] ✓",
-    "├─ RAM: Coffee 64GB DDR5 ✓",
-    "├─ GPU: Creativity RTX 4090 ✓",
-    "└─ SSD: Experience 15TB NVMe ✓",
+    "INSERT COIN TO START...",
+    "SELECT CHARACTER: [RAPHAËL AUBERLET]",
+    "CLASS: DSI / ARCHITECT / DEVOPS WIZARD",
     "",
-    "Loading game assets...",
-    "▸ Level: Senior Developer [UNLOCKED]",
-    "▸ XP: 15+ years [MAX]",
-    "▸ Skills tree: COMPLETED",
-    "▸ Achievement unlocked: 'Full Stack Master'",
+    "STATS:",
+    "├─ STRENGTH (Back-end): [██████████] 99",
+    "├─ AGILITY (DevOps):    [██████████] 99",
+    "└─ INTELLECT (Lead):    [██████████] 95",
     "",
-    { type: 'loading' } // Marqueur spécial pour l'animation de loading
+    "INVENTORY:",
+    "▸ Legendary Helm of 'Root Access'",
+    "▸ Enchanted Keyboard of '+5 Productivity'",
+    "▸ Infinite Coffee Potion",
+    "",
+    "WORLD STATUS: 'Deployment in progress...'",
+    { type: 'loading' }
   ];
-
+  
   useEffect(() => {
     if (isBooting) {
       let index = 0;
